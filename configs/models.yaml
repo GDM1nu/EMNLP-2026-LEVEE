@@ -1,0 +1,8 @@
+models:
+  - name: llama3_8b
+    model_name: meta-llama/Meta-Llama-3-8B
+    n_layers: 32
+    dtype: bfloat16
+    trust_remote_code: true
+    gated: true
+    bbq_path: /path/to/bbq/data/Age.jsonl  # set to your local BBQ dataset path
