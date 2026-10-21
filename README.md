@@ -1,10 +1,35 @@
-# LEVEE: Layer-wise Evaluation of Vector Encoding Effects
+<h1 align="center">LEVEE</h1>
+<p align="center"><b>Layer-wise Evaluation of Vector Encoding Effects</b><br>
+Bias Localization and Functional Separation across 11 LLMs</p>
 
-**EMNLP 2026 (Main Conference)** · Dongmin Kim, Youhyun Shin
+<p align="center">
+Dongmin Kim (Incheon National University) · Youhyun Shin (Korea University)
+</p>
 
-*LEVEE: Layer-wise Evaluation of Vector Encoding Effects — Bias Localization and Functional Separation across 11 LLMs*
+<p align="center">
+<img alt="EMNLP 2026 Main Conference" src="https://img.shields.io/badge/EMNLP%202026-Main%20Conference-b31b1b">
+<img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-blue">
+</p>
 
-[Quick start](#quick-start) · [Key results](#key-results) · [Reproducing](#reproducing-main-results) · [Scoring](#scoring-paper-32) · [Citation](#citation)
+<p align="center">
+<a href="#abstract">Abstract</a> ·
+<a href="#paper-at-a-glance">Summary</a> ·
+<a href="#key-results">Key results</a> ·
+<a href="#quick-start">Quick start</a> ·
+<a href="#reproducing-main-results">Reproduce</a> ·
+<a href="#scoring-paper-32">Scoring</a> ·
+<a href="#citation">Citation</a>
+</p>
+
+<p align="center">
+<img src="assets/fig_per_layer_sweep.png" alt="Per-layer L-BBQ sweep: bias suppression is concentrated in the mid-third" width="95%"><br>
+<sub><i>Per-layer injection of ΔW (Qwen2.5-3B, Gemma-2-9B, Llama-3-8B): the bias minimum sits in the mid-third.
+Dashed = base model, dotted = full ΔW, shaded = first / mid / last third.</i></sub>
+</p>
+
+| 📍 Localization | ✂️ Functional separation | ⚠️ Active suppression |
+|---|---|---|
+| Bias suppression lives in the **mid-third** of ΔW: removing it raises bias in **11 / 11** models | The **first third** carries capability (up to **−35.0 pp** MMLU in Gemma-2-9B); the **mid third** carries bias | In **3 / 11** models, dropping the mid-third leaves the model **more biased than the unaligned base** (up to +46%) |
 
 ---
 
@@ -72,13 +97,13 @@ locates *where* in ΔW the effect lives; it is not a circuit-level mechanism.
 **Models tested:** Qwen2.5 (0.5B/1.5B/3B/14B), Gemma-2 (2B/9B), Gemma-3-12B,
 Llama-3.2 (1B/3B), Llama-3-8B, Llama-3.1-8B.
 
-### Key figures
+### Key figure
 
-![Per-layer L-BBQ sweep: bias suppression is concentrated in the mid-third](assets/fig_per_layer_sweep.png)
-*Per-layer injection sweep (Qwen2.5-3B, Gemma-2-9B, Llama-3-8B). Dashed grey = base model, dotted = full ΔW; shaded bands are the three thirds.*
-
-![BBQ–MMLU dissociation: (a) block removal, (b) block-only injection](assets/fig_bbq_mmlu_dissociation.png)
-*Left: removing the mid third (circles) moves bias, removing the first third (squares) moves MMLU in Gemma. Right: the same separation under single-third injection.*
+<p align="center">
+<img src="assets/fig_bbq_mmlu_dissociation.png" alt="BBQ–MMLU dissociation: (a) block removal, (b) block-only injection" width="95%"><br>
+<sub><i>Left: removing the mid third (circles) moves bias, removing the first third (squares) moves MMLU in Gemma.
+Right: the same separation under single-third injection.</i></sub>
+</p>
 
 ## Key results
 
@@ -154,7 +179,9 @@ levee-emnlp/
 
 ---
 
-## Setup
+<details>
+<summary><b>Setup, hardware, paths, model weights</b></summary>
+
 
 ### Requirements
 
@@ -189,6 +216,8 @@ BBQ is not redistributed here; obtain it from the official release
 All models are publicly available on HuggingFace. See `configs/models.yaml` for
 the exact model IDs. Download each base and instruct variant before running
 experiments.
+
+</details>
 
 ---
 
@@ -256,7 +285,9 @@ numbers — it has not been retroactively altered.**
 
 ---
 
-## Camera-ready appendix
+<details>
+<summary><b>Camera-ready appendix scripts</b></summary>
+
 
 Scripts that generate the camera-ready appendix tables from pre-computed results:
 
@@ -267,6 +298,8 @@ python scripts/camera_ready/verify_bi_form.py             # verifies the L-BBQ f
 python scripts/rebuttal/bootstrap_ci.py                   # bootstrap CIs (B=10,000, stratified)
 python pilot/run_pilot.py --model qwen_3b --gpu 0         # re-scoring pilot (per-example predictions saved)
 ```
+
+</details>
 
 ---
 
