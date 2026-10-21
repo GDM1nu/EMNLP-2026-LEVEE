@@ -8,32 +8,77 @@
 
 ---
 
-## Overview
+## Abstract
 
-Task-vector methods treat the alignment update ΔW = W_instruct − W_base as one
-monolithic object. We open it up: we inject each layer's ΔW into the base model
-independently and measure bias (BBQ) and capability (MMLU), across 11
-instruction-tuned LLMs (0.5B–14B; Qwen2.5, Gemma-2/3, Llama-3.x). Five designs
-cover sufficiency (per-layer sweep, cumulative injection), necessity (block
-removal), and directional specificity (sign-flip, norm-matched controls).
+> Large language models encode social biases that instruction fine-tuning aims to
+> suppress. Instruction fine-tuning applies its weight changes through the alignment
+> task vector ΔW, yet prior work treats it as a monolithic object, leaving its
+> internal layer structure opaque: which layers carry bias suppression, which carry
+> general capability, and whether these are separable, remains unknown. We map this
+> structure by injecting each layer's ΔW_i independently into the base model across
+> 11 LLMs from Qwen2.5, Gemma-2/3, and Llama-3 families (0.5B–14B). Testing via
+> per-layer sufficiency sweeps, block removal, and a BBQ–MMLU dissociation, we find
+> three results. First, BBQ-measured bias suppression localizes to the mid-third of
+> transformer layers in 9 of 11 models, with mid-third removal raising bias across
+> all 11 while first- and last-third removals produce smaller L-BBQ increases in all
+> nine structured-signal models. Second, mid- and first-third removals dissociate
+> BBQ and MMLU: mid-third removal is BBQ-critical across all tested models while
+> first-third removal can sharply reduce MMLU in Gemma architectures, supporting
+> functional separation of bias suppression and capability in weight space. Third,
+> mid-third removal raises bias *above* the unaligned base in 3 of 11 cases: partial
+> ΔW transfer without the mid-third can make a model *more* biased than the
+> unaligned base model. These findings provide an empirical roadmap for targeted
+> debiasing and safe task vector composition.
 
-![Per-layer L-BBQ sweep: bias suppression is concentrated in the mid-third](assets/fig_per_layer_sweep.png)
+## Paper at a glance
 
-**Three main findings:**
+**Question.** Alignment fine-tuning changes a model through ΔW = W_instruct − W_base.
+Task-vector methods (task arithmetic, TIES, DARE) treat ΔW as one monolithic object.
+Which layers of ΔW carry bias suppression, which carry general capability, and can
+the two be separated?
 
-1. **Layer-wise localization** — all 9 structured-signal models show a mid-third
-   minimum in the per-layer BBQ profile; mid-third block removal raises L-BBQ in
-   all 11 models (ΔL-BBQ +0.007 to +0.215) and is the most critical third in 10 of 11.
-2. **Functional separation** — in Gemma-2 models, removing the first third reduces
-   MMLU by up to 35.0 pp (Gemma-2-9B) with |ΔL-BBQ| ≤ 0.006, while mid-third
-   removal causes larger BBQ changes but smaller MMLU losses.
-3. **Active suppression** — in 3 of 11 models (Gemma-2-2B, Llama-3.2-3B,
-   Llama-3-8B), removing the mid-third yields a model *more biased than the
-   unaligned base* (up to +46% above base): partial ΔW transfer that omits the
-   mid-third can be worse than no transfer.
+**Approach.** Split the layers into thirds (first / mid / last) and intervene on ΔW
+directly in the base model — per-layer injection, cumulative injection, block removal
+(−first / −mid / −last, and only-first / only-mid / only-last), sign-flip and
+norm-matched controls. Bias is measured with **L-BBQ**, a BBQ-derived ambiguous-context
+score (paper §3.2; not identical to the official BBQ bias score), capability with a
+14-subject 5-shot MMLU subset. 11 base/instruct pairs: Qwen2.5 (0.5B–14B), Gemma-2/3,
+Llama-3.x.
+
+**What we find.**
+- **Localization.** Per-layer bias suppression has a mid-third minimum in all 9
+  structured-signal models; removing the mid-third raises L-BBQ in all 11 models and is the
+  most critical third in 10 of 11 (the exception is the diffuse Qwen2.5-0.5B).
+- **Functional separation.** In Gemma-2, removing the first third costs up to 35.0 pp MMLU
+  at |ΔL-BBQ| ≤ 0.006, whereas removing the mid third changes bias more and MMLU less.
+  First-third-only injection recovers +31.8 pp MMLU in Gemma-2-9B (−35.0 pp lost under
+  −first). This MMLU-side separation holds in Gemma but not in Llama-3.2-3B or Qwen2.5-3B.
+- **Active suppression.** In 3 of 11 models (Gemma-2-2B, Llama-3.2-3B, Llama-3-8B), the
+  model with only the outer thirds of ΔW is *more* biased than the un-aligned base
+  (up to +46%). A layer-selective audit therefore catches a risk that
+  evaluating the full ΔW hides.
+- **Weight statistics do not show it.** Norm, sign coherence, and participation ratio all
+  point to the last third, so the mid-third structure is only visible through intervention.
+
+**Scope and limitations** (full list in the paper).
+Main results cover 0.5B–14B models from three families; a separate appendix extends
+to Mistral and 24–32B models. BBQ is a QA benchmark; the mid-third tendency appears
+in StereoSet (6/11 models) and only weakly in CrowS-Pairs. Single-layer injection
+ignores cross-layer interactions. The string-based response mapper leaves a
+condition-dependent subset of predictions unassigned (quantified in the appendix; block-level
+conclusions survive official-scorer rescoring for three model families). The analysis
+locates *where* in ΔW the effect lives; it is not a circuit-level mechanism.
 
 **Models tested:** Qwen2.5 (0.5B/1.5B/3B/14B), Gemma-2 (2B/9B), Gemma-3-12B,
 Llama-3.2 (1B/3B), Llama-3-8B, Llama-3.1-8B.
+
+### Key figures
+
+![Per-layer L-BBQ sweep: bias suppression is concentrated in the mid-third](assets/fig_per_layer_sweep.png)
+*Per-layer injection sweep (Qwen2.5-3B, Gemma-2-9B, Llama-3-8B). Dashed grey = base model, dotted = full ΔW; shaded bands are the three thirds.*
+
+![BBQ–MMLU dissociation: (a) block removal, (b) block-only injection](assets/fig_bbq_mmlu_dissociation.png)
+*Left: removing the mid third (circles) moves bias, removing the first third (squares) moves MMLU in Gemma. Right: the same separation under single-third injection.*
 
 ## Key results
 
