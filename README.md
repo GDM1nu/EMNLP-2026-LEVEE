@@ -23,11 +23,11 @@ Dongmin Kim (Incheon National University) · Youhyun Shin (Korea University)
 
 <p align="center">
 <img src="assets/fig_per_layer_sweep.png" alt="Per-layer L-BBQ sweep: bias suppression is concentrated in the mid-third" width="95%"><br>
-<sub><i>Per-layer injection of ΔW (Qwen2.5-3B, Gemma-2-9B, Llama-3-8B): the bias minimum sits in the mid-third.
+<sub><i>Per-layer injection of ΔW (Qwen2.5-3B, Gemma-2-9B, Llama-3-8B): the bias minimum (the “valley” 🏞️) sits in the mid-third.
 Dashed = base model, dotted = full ΔW, shaded = first / mid / last third.</i></sub>
 </p>
 
-| 📍 Localization | ✂️ Functional separation | ⚠️ Active suppression |
+| 📍 Localization 🏞️ | ✂️ Functional separation | ⚠️ Active suppression |
 |---|---|---|
 | Bias suppression lives in the **mid-third** of ΔW: removing it raises bias in **11 / 11** models | The **first third** carries capability (up to **−35.0 pp** MMLU in Gemma-2-9B); the **mid third** carries bias | In **3 / 11** models, dropping the mid-third leaves the model **more biased than the unaligned base** (up to +46%) |
 
