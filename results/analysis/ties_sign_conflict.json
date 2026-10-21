@@ -1,0 +1,3055 @@
+{
+  "n_models": 9,
+  "reference": "Yadav et al. (NeurIPS 2023) TIES-Merging",
+  "trim_frac": 0.2,
+  "metric_desc": {
+    "sign_coherence": "|mean(ΔW)| / mean(|ΔW|) — directional consistency [0→noisy, 1→coherent]",
+    "sign_entropy": "H(pos_frac, neg_frac) in bits — 0=all same sign, 1=perfectly mixed",
+    "trim_survival": "fraction of top-20%% params agreeing with elected sign after TIES trim"
+  },
+  "results": [
+    {
+      "model": "qwen_0.5b",
+      "n_layers": 24,
+      "thirds_coherence": {
+        "first": 0.000457,
+        "mid": 0.000483,
+        "last": 0.00079
+      },
+      "thirds_entropy": {
+        "first": 0.999605,
+        "mid": 0.999691,
+        "last": 0.999641
+      },
+      "thirds_survival": {
+        "first": 0.500117,
+        "mid": 0.500141,
+        "last": 0.500286
+      },
+      "dominant_coherence": "last",
+      "dominant_survival": "last",
+      "spearman_coherence_bias": 0.2209,
+      "spearman_coherence_bias_p": 0.2997,
+      "spearman_survival_bias": -0.0296,
+      "spearman_survival_bias_p": 0.8909,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 14912384,
+          "sign_coherence": 0.000906,
+          "sign_entropy": 0.999527,
+          "pos_frac": 0.487196,
+          "trim_survival": 0.500163,
+          "mean_abs": 0.001141,
+          "bias_score": 0.255011
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 14912384,
+          "sign_coherence": 5e-06,
+          "sign_entropy": 0.999574,
+          "pos_frac": 0.487847,
+          "trim_survival": 0.499944,
+          "mean_abs": 0.001115,
+          "bias_score": 0.251313
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 14912384,
+          "sign_coherence": 0.000346,
+          "sign_entropy": 0.9996,
+          "pos_frac": 0.488229,
+          "trim_survival": 0.499963,
+          "mean_abs": 0.001113,
+          "bias_score": 0.254262
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 14912384,
+          "sign_coherence": 0.000213,
+          "sign_entropy": 0.999625,
+          "pos_frac": 0.488603,
+          "trim_survival": 0.500032,
+          "mean_abs": 0.001141,
+          "bias_score": 0.258196
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 14912384,
+          "sign_coherence": 0.000741,
+          "sign_entropy": 0.999637,
+          "pos_frac": 0.488787,
+          "trim_survival": 0.500281,
+          "mean_abs": 0.001174,
+          "bias_score": 0.252814
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 14912384,
+          "sign_coherence": 0.000909,
+          "sign_entropy": 0.999635,
+          "pos_frac": 0.488754,
+          "trim_survival": 0.500522,
+          "mean_abs": 0.001159,
+          "bias_score": 0.253121
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 14912384,
+          "sign_coherence": 3.7e-05,
+          "sign_entropy": 0.999606,
+          "pos_frac": 0.488318,
+          "trim_survival": 0.499854,
+          "mean_abs": 0.001156,
+          "bias_score": 0.25242
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 14912384,
+          "sign_coherence": 0.000497,
+          "sign_entropy": 0.999635,
+          "pos_frac": 0.488756,
+          "trim_survival": 0.500181,
+          "mean_abs": 0.001192,
+          "bias_score": 0.243789
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 14912384,
+          "sign_coherence": 0.000904,
+          "sign_entropy": 0.999693,
+          "pos_frac": 0.489688,
+          "trim_survival": 0.500286,
+          "mean_abs": 0.001262,
+          "bias_score": 0.247165
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 14912384,
+          "sign_coherence": 0.000664,
+          "sign_entropy": 0.999695,
+          "pos_frac": 0.489727,
+          "trim_survival": 0.500192,
+          "mean_abs": 0.00128,
+          "bias_score": 0.242086
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 14912384,
+          "sign_coherence": 0.000206,
+          "sign_entropy": 0.999696,
+          "pos_frac": 0.48973,
+          "trim_survival": 0.500394,
+          "mean_abs": 0.001288,
+          "bias_score": 0.235569
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 14912384,
+          "sign_coherence": 0.000444,
+          "sign_entropy": 0.999716,
+          "pos_frac": 0.490072,
+          "trim_survival": 0.499947,
+          "mean_abs": 0.001281,
+          "bias_score": 0.247604
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 14912384,
+          "sign_coherence": 0.000244,
+          "sign_entropy": 0.999698,
+          "pos_frac": 0.489767,
+          "trim_survival": 0.500218,
+          "mean_abs": 0.001298,
+          "bias_score": 0.243864
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 14912384,
+          "sign_coherence": 0.00027,
+          "sign_entropy": 0.999695,
+          "pos_frac": 0.489716,
+          "trim_survival": 0.500058,
+          "mean_abs": 0.001272,
+          "bias_score": 0.246422
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 14912384,
+          "sign_coherence": 0.000354,
+          "sign_entropy": 0.999662,
+          "pos_frac": 0.489171,
+          "trim_survival": 0.499677,
+          "mean_abs": 0.00127,
+          "bias_score": 0.251327
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 14912384,
+          "sign_coherence": 0.000775,
+          "sign_entropy": 0.999677,
+          "pos_frac": 0.489418,
+          "trim_survival": 0.500355,
+          "mean_abs": 0.001257,
+          "bias_score": 0.254158
+        },
+        {
+          "layer_idx": 16,
+          "n_params": 14912384,
+          "sign_coherence": 0.000597,
+          "sign_entropy": 0.999677,
+          "pos_frac": 0.489419,
+          "trim_survival": 0.500217,
+          "mean_abs": 0.001247,
+          "bias_score": 0.26063
+        },
+        {
+          "layer_idx": 17,
+          "n_params": 14912384,
+          "sign_coherence": 0.000878,
+          "sign_entropy": 0.999672,
+          "pos_frac": 0.489331,
+          "trim_survival": 0.500496,
+          "mean_abs": 0.00126,
+          "bias_score": 0.250829
+        },
+        {
+          "layer_idx": 18,
+          "n_params": 14912384,
+          "sign_coherence": 0.000534,
+          "sign_entropy": 0.99966,
+          "pos_frac": 0.489143,
+          "trim_survival": 0.500113,
+          "mean_abs": 0.00126,
+          "bias_score": 0.253429
+        },
+        {
+          "layer_idx": 19,
+          "n_params": 14912384,
+          "sign_coherence": 0.000928,
+          "sign_entropy": 0.999646,
+          "pos_frac": 0.488926,
+          "trim_survival": 0.50023,
+          "mean_abs": 0.001216,
+          "bias_score": 0.252709
+        },
+        {
+          "layer_idx": 20,
+          "n_params": 14912384,
+          "sign_coherence": 0.001304,
+          "sign_entropy": 0.999644,
+          "pos_frac": 0.488893,
+          "trim_survival": 0.50047,
+          "mean_abs": 0.001214,
+          "bias_score": 0.252063
+        },
+        {
+          "layer_idx": 21,
+          "n_params": 14912384,
+          "sign_coherence": 0.000813,
+          "sign_entropy": 0.999626,
+          "pos_frac": 0.488617,
+          "trim_survival": 0.500315,
+          "mean_abs": 0.001228,
+          "bias_score": 0.251476
+        },
+        {
+          "layer_idx": 22,
+          "n_params": 14912384,
+          "sign_coherence": 0.000564,
+          "sign_entropy": 0.99963,
+          "pos_frac": 0.48867,
+          "trim_survival": 0.499909,
+          "mean_abs": 0.001244,
+          "bias_score": 0.255318
+        },
+        {
+          "layer_idx": 23,
+          "n_params": 14912384,
+          "sign_coherence": 0.000704,
+          "sign_entropy": 0.999575,
+          "pos_frac": 0.487857,
+          "trim_survival": 0.500536,
+          "mean_abs": 0.001141,
+          "bias_score": 0.258648
+        }
+      ]
+    },
+    {
+      "model": "qwen_1.5b",
+      "n_layers": 28,
+      "thirds_coherence": {
+        "first": 0.000267,
+        "mid": 0.000192,
+        "last": 0.00015
+      },
+      "thirds_entropy": {
+        "first": 0.983091,
+        "mid": 0.986889,
+        "last": 0.987314
+      },
+      "thirds_survival": {
+        "first": 0.500218,
+        "mid": 0.500188,
+        "last": 0.500099
+      },
+      "dominant_coherence": "first",
+      "dominant_survival": "first",
+      "spearman_coherence_bias": -0.1899,
+      "spearman_coherence_bias_p": 0.333,
+      "spearman_survival_bias": -0.2852,
+      "spearman_survival_bias_p": 0.1413,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 46797824,
+          "sign_coherence": 6.4e-05,
+          "sign_entropy": 0.982275,
+          "pos_frac": 0.421783,
+          "trim_survival": 0.500193,
+          "mean_abs": 0.000244,
+          "bias_score": 0.275313
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 46797824,
+          "sign_coherence": 9.4e-05,
+          "sign_entropy": 0.980927,
+          "pos_frac": 0.418876,
+          "trim_survival": 0.499948,
+          "mean_abs": 0.000245,
+          "bias_score": 0.272575
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 46797824,
+          "sign_coherence": 0.000465,
+          "sign_entropy": 0.982374,
+          "pos_frac": 0.422002,
+          "trim_survival": 0.500465,
+          "mean_abs": 0.000249,
+          "bias_score": 0.268673
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 46797824,
+          "sign_coherence": 0.00027,
+          "sign_entropy": 0.98292,
+          "pos_frac": 0.423213,
+          "trim_survival": 0.500102,
+          "mean_abs": 0.000252,
+          "bias_score": 0.274286
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 46797824,
+          "sign_coherence": 0.000533,
+          "sign_entropy": 0.983771,
+          "pos_frac": 0.425143,
+          "trim_survival": 0.500388,
+          "mean_abs": 0.000255,
+          "bias_score": 0.270362
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 46797824,
+          "sign_coherence": 0.000443,
+          "sign_entropy": 0.983552,
+          "pos_frac": 0.424641,
+          "trim_survival": 0.50041,
+          "mean_abs": 0.000254,
+          "bias_score": 0.270631
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 46797824,
+          "sign_coherence": 3.1e-05,
+          "sign_entropy": 0.983908,
+          "pos_frac": 0.42546,
+          "trim_survival": 0.50009,
+          "mean_abs": 0.000257,
+          "bias_score": 0.273254
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 46797824,
+          "sign_coherence": 0.000302,
+          "sign_entropy": 0.983704,
+          "pos_frac": 0.42499,
+          "trim_survival": 0.500183,
+          "mean_abs": 0.000256,
+          "bias_score": 0.273842
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 46797824,
+          "sign_coherence": 0.000204,
+          "sign_entropy": 0.984387,
+          "pos_frac": 0.426572,
+          "trim_survival": 0.500179,
+          "mean_abs": 0.000259,
+          "bias_score": 0.272713
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 46797824,
+          "sign_coherence": 0.0,
+          "sign_entropy": 0.984947,
+          "pos_frac": 0.427897,
+          "trim_survival": 0.500055,
+          "mean_abs": 0.000264,
+          "bias_score": 0.273455
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 46797824,
+          "sign_coherence": 0.000299,
+          "sign_entropy": 0.985565,
+          "pos_frac": 0.429388,
+          "trim_survival": 0.500109,
+          "mean_abs": 0.000267,
+          "bias_score": 0.269312
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 46797824,
+          "sign_coherence": 6.1e-05,
+          "sign_entropy": 0.986084,
+          "pos_frac": 0.430665,
+          "trim_survival": 0.500093,
+          "mean_abs": 0.000271,
+          "bias_score": 0.268378
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 46797824,
+          "sign_coherence": 0.000212,
+          "sign_entropy": 0.986527,
+          "pos_frac": 0.431775,
+          "trim_survival": 0.500196,
+          "mean_abs": 0.000272,
+          "bias_score": 0.268478
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 46797824,
+          "sign_coherence": 0.000491,
+          "sign_entropy": 0.986494,
+          "pos_frac": 0.431691,
+          "trim_survival": 0.500259,
+          "mean_abs": 0.000272,
+          "bias_score": 0.269408
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 46797824,
+          "sign_coherence": 2.5e-05,
+          "sign_entropy": 0.987879,
+          "pos_frac": 0.435277,
+          "trim_survival": 0.500101,
+          "mean_abs": 0.000278,
+          "bias_score": 0.268373
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 46797824,
+          "sign_coherence": 0.000143,
+          "sign_entropy": 0.987502,
+          "pos_frac": 0.434281,
+          "trim_survival": 0.500277,
+          "mean_abs": 0.000281,
+          "bias_score": 0.269476
+        },
+        {
+          "layer_idx": 16,
+          "n_params": 46797824,
+          "sign_coherence": 0.000238,
+          "sign_entropy": 0.988575,
+          "pos_frac": 0.437159,
+          "trim_survival": 0.500247,
+          "mean_abs": 0.000289,
+          "bias_score": 0.274084
+        },
+        {
+          "layer_idx": 17,
+          "n_params": 46797824,
+          "sign_coherence": 0.000261,
+          "sign_entropy": 0.988424,
+          "pos_frac": 0.436746,
+          "trim_survival": 0.500359,
+          "mean_abs": 0.000292,
+          "bias_score": 0.268769
+        },
+        {
+          "layer_idx": 18,
+          "n_params": 46797824,
+          "sign_coherence": 0.000106,
+          "sign_entropy": 0.988356,
+          "pos_frac": 0.43656,
+          "trim_survival": 0.500072,
+          "mean_abs": 0.000291,
+          "bias_score": 0.271433
+        },
+        {
+          "layer_idx": 19,
+          "n_params": 46797824,
+          "sign_coherence": 6.5e-05,
+          "sign_entropy": 0.988257,
+          "pos_frac": 0.43629,
+          "trim_survival": 0.499936,
+          "mean_abs": 0.000292,
+          "bias_score": 0.271705
+        },
+        {
+          "layer_idx": 20,
+          "n_params": 46797824,
+          "sign_coherence": 4.4e-05,
+          "sign_entropy": 0.987839,
+          "pos_frac": 0.435172,
+          "trim_survival": 0.500092,
+          "mean_abs": 0.000296,
+          "bias_score": 0.269733
+        },
+        {
+          "layer_idx": 21,
+          "n_params": 46797824,
+          "sign_coherence": 0.000192,
+          "sign_entropy": 0.987818,
+          "pos_frac": 0.435115,
+          "trim_survival": 0.500324,
+          "mean_abs": 0.000295,
+          "bias_score": 0.270428
+        },
+        {
+          "layer_idx": 22,
+          "n_params": 46797824,
+          "sign_coherence": 0.000265,
+          "sign_entropy": 0.98724,
+          "pos_frac": 0.433597,
+          "trim_survival": 0.50021,
+          "mean_abs": 0.000292,
+          "bias_score": 0.27075
+        },
+        {
+          "layer_idx": 23,
+          "n_params": 46797824,
+          "sign_coherence": 0.000291,
+          "sign_entropy": 0.986503,
+          "pos_frac": 0.431712,
+          "trim_survival": 0.500206,
+          "mean_abs": 0.000288,
+          "bias_score": 0.268247
+        },
+        {
+          "layer_idx": 24,
+          "n_params": 46797824,
+          "sign_coherence": 8.2e-05,
+          "sign_entropy": 0.986332,
+          "pos_frac": 0.431282,
+          "trim_survival": 0.500021,
+          "mean_abs": 0.00029,
+          "bias_score": 0.26945
+        },
+        {
+          "layer_idx": 25,
+          "n_params": 46797824,
+          "sign_coherence": 0.000343,
+          "sign_entropy": 0.986796,
+          "pos_frac": 0.432457,
+          "trim_survival": 0.50011,
+          "mean_abs": 0.000296,
+          "bias_score": 0.270163
+        },
+        {
+          "layer_idx": 26,
+          "n_params": 46797824,
+          "sign_coherence": 9.3e-05,
+          "sign_entropy": 0.986591,
+          "pos_frac": 0.431936,
+          "trim_survival": 0.499997,
+          "mean_abs": 0.000294,
+          "bias_score": 0.271574
+        },
+        {
+          "layer_idx": 27,
+          "n_params": 46797824,
+          "sign_coherence": 1.9e-05,
+          "sign_entropy": 0.987411,
+          "pos_frac": 0.434043,
+          "trim_survival": 0.500023,
+          "mean_abs": 0.000281,
+          "bias_score": 0.270938
+        }
+      ]
+    },
+    {
+      "model": "qwen_3b",
+      "n_layers": 36,
+      "thirds_coherence": {
+        "first": 0.000667,
+        "mid": 8.8e-05,
+        "last": 0.000141
+      },
+      "thirds_entropy": {
+        "first": 0.987142,
+        "mid": 0.985627,
+        "last": 0.986917
+      },
+      "thirds_survival": {
+        "first": 0.50058,
+        "mid": 0.500065,
+        "last": 0.500101
+      },
+      "dominant_coherence": "first",
+      "dominant_survival": "first",
+      "spearman_coherence_bias": 0.126,
+      "spearman_coherence_bias_p": 0.464,
+      "spearman_survival_bias": 0.1725,
+      "spearman_survival_bias_p": 0.3145,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 77076992,
+          "sign_coherence": 0.000154,
+          "sign_entropy": 0.983622,
+          "pos_frac": 0.424802,
+          "trim_survival": 0.500079,
+          "mean_abs": 0.000229,
+          "bias_score": 0.048461
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 77076992,
+          "sign_coherence": 5e-05,
+          "sign_entropy": 0.992089,
+          "pos_frac": 0.447688,
+          "trim_survival": 0.499488,
+          "mean_abs": 6.9e-05,
+          "bias_score": 0.044707
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 77076992,
+          "sign_coherence": 0.001036,
+          "sign_entropy": 0.992479,
+          "pos_frac": 0.448991,
+          "trim_survival": 0.501532,
+          "mean_abs": 0.0001,
+          "bias_score": 0.047505
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 77076992,
+          "sign_coherence": 0.002997,
+          "sign_entropy": 0.991812,
+          "pos_frac": 0.446779,
+          "trim_survival": 0.501689,
+          "mean_abs": 0.000143,
+          "bias_score": 0.049984
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 77076992,
+          "sign_coherence": 0.001579,
+          "sign_entropy": 0.992105,
+          "pos_frac": 0.447739,
+          "trim_survival": 0.502068,
+          "mean_abs": 0.000165,
+          "bias_score": 0.049368
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 77076992,
+          "sign_coherence": 0.000111,
+          "sign_entropy": 0.987786,
+          "pos_frac": 0.435031,
+          "trim_survival": 0.500527,
+          "mean_abs": 0.000207,
+          "bias_score": 0.049287
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 77076992,
+          "sign_coherence": 0.00033,
+          "sign_entropy": 0.98486,
+          "pos_frac": 0.42769,
+          "trim_survival": 0.500653,
+          "mean_abs": 0.000219,
+          "bias_score": 0.047909
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 77076992,
+          "sign_coherence": 0.000659,
+          "sign_entropy": 0.985853,
+          "pos_frac": 0.430094,
+          "trim_survival": 0.500119,
+          "mean_abs": 0.000222,
+          "bias_score": 0.049283
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 77076992,
+          "sign_coherence": 0.000364,
+          "sign_entropy": 0.983291,
+          "pos_frac": 0.42405,
+          "trim_survival": 0.500321,
+          "mean_abs": 0.000238,
+          "bias_score": 0.050706
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 77076992,
+          "sign_coherence": 0.000315,
+          "sign_entropy": 0.983564,
+          "pos_frac": 0.424669,
+          "trim_survival": 0.500143,
+          "mean_abs": 0.000238,
+          "bias_score": 0.047426
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 77076992,
+          "sign_coherence": 3.1e-05,
+          "sign_entropy": 0.984147,
+          "pos_frac": 0.426012,
+          "trim_survival": 0.500097,
+          "mean_abs": 0.000243,
+          "bias_score": 0.050416
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 77076992,
+          "sign_coherence": 0.000383,
+          "sign_entropy": 0.984101,
+          "pos_frac": 0.425906,
+          "trim_survival": 0.500241,
+          "mean_abs": 0.000244,
+          "bias_score": 0.051236
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 77076992,
+          "sign_coherence": 7.1e-05,
+          "sign_entropy": 0.984154,
+          "pos_frac": 0.426029,
+          "trim_survival": 0.500024,
+          "mean_abs": 0.000245,
+          "bias_score": 0.044863
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 77076992,
+          "sign_coherence": 2.7e-05,
+          "sign_entropy": 0.984016,
+          "pos_frac": 0.42571,
+          "trim_survival": 0.500051,
+          "mean_abs": 0.000245,
+          "bias_score": 0.046882
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 77076992,
+          "sign_coherence": 1.1e-05,
+          "sign_entropy": 0.983991,
+          "pos_frac": 0.425651,
+          "trim_survival": 0.500086,
+          "mean_abs": 0.000245,
+          "bias_score": 0.044473
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 77076992,
+          "sign_coherence": 0.000168,
+          "sign_entropy": 0.984294,
+          "pos_frac": 0.426355,
+          "trim_survival": 0.500093,
+          "mean_abs": 0.000247,
+          "bias_score": 0.039868
+        },
+        {
+          "layer_idx": 16,
+          "n_params": 77076992,
+          "sign_coherence": 8.2e-05,
+          "sign_entropy": 0.985046,
+          "pos_frac": 0.428134,
+          "trim_survival": 0.500145,
+          "mean_abs": 0.00025,
+          "bias_score": 0.03712
+        },
+        {
+          "layer_idx": 17,
+          "n_params": 77076992,
+          "sign_coherence": 0.000259,
+          "sign_entropy": 0.986054,
+          "pos_frac": 0.43059,
+          "trim_survival": 0.500062,
+          "mean_abs": 0.000254,
+          "bias_score": 0.034419
+        },
+        {
+          "layer_idx": 18,
+          "n_params": 77076992,
+          "sign_coherence": 2.9e-05,
+          "sign_entropy": 0.986244,
+          "pos_frac": 0.431064,
+          "trim_survival": 0.500055,
+          "mean_abs": 0.000255,
+          "bias_score": 0.027663
+        },
+        {
+          "layer_idx": 19,
+          "n_params": 77076992,
+          "sign_coherence": 9.2e-05,
+          "sign_entropy": 0.987031,
+          "pos_frac": 0.433057,
+          "trim_survival": 0.500082,
+          "mean_abs": 0.000257,
+          "bias_score": 0.037032
+        },
+        {
+          "layer_idx": 20,
+          "n_params": 77076992,
+          "sign_coherence": 0.000112,
+          "sign_entropy": 0.986462,
+          "pos_frac": 0.431611,
+          "trim_survival": 0.5001,
+          "mean_abs": 0.000257,
+          "bias_score": 0.039167
+        },
+        {
+          "layer_idx": 21,
+          "n_params": 77076992,
+          "sign_coherence": 5.2e-05,
+          "sign_entropy": 0.98638,
+          "pos_frac": 0.431405,
+          "trim_survival": 0.500091,
+          "mean_abs": 0.000259,
+          "bias_score": 0.04375
+        },
+        {
+          "layer_idx": 22,
+          "n_params": 77076992,
+          "sign_coherence": 0.000117,
+          "sign_entropy": 0.986681,
+          "pos_frac": 0.432164,
+          "trim_survival": 0.500003,
+          "mean_abs": 0.000262,
+          "bias_score": 0.039684
+        },
+        {
+          "layer_idx": 23,
+          "n_params": 77076992,
+          "sign_coherence": 4e-05,
+          "sign_entropy": 0.987176,
+          "pos_frac": 0.433432,
+          "trim_survival": 0.49999,
+          "mean_abs": 0.000264,
+          "bias_score": 0.040344
+        },
+        {
+          "layer_idx": 24,
+          "n_params": 77076992,
+          "sign_coherence": 0.000411,
+          "sign_entropy": 0.987568,
+          "pos_frac": 0.434453,
+          "trim_survival": 0.500269,
+          "mean_abs": 0.000269,
+          "bias_score": 0.041711
+        },
+        {
+          "layer_idx": 25,
+          "n_params": 77076992,
+          "sign_coherence": 2.6e-05,
+          "sign_entropy": 0.987807,
+          "pos_frac": 0.435087,
+          "trim_survival": 0.500053,
+          "mean_abs": 0.000272,
+          "bias_score": 0.048269
+        },
+        {
+          "layer_idx": 26,
+          "n_params": 77076992,
+          "sign_coherence": 0.000187,
+          "sign_entropy": 0.987311,
+          "pos_frac": 0.433782,
+          "trim_survival": 0.500141,
+          "mean_abs": 0.000271,
+          "bias_score": 0.042262
+        },
+        {
+          "layer_idx": 27,
+          "n_params": 77076992,
+          "sign_coherence": 0.000113,
+          "sign_entropy": 0.987299,
+          "pos_frac": 0.433751,
+          "trim_survival": 0.500026,
+          "mean_abs": 0.000271,
+          "bias_score": 0.044557
+        },
+        {
+          "layer_idx": 28,
+          "n_params": 77076992,
+          "sign_coherence": 0.000139,
+          "sign_entropy": 0.987113,
+          "pos_frac": 0.433269,
+          "trim_survival": 0.500005,
+          "mean_abs": 0.000273,
+          "bias_score": 0.051114
+        },
+        {
+          "layer_idx": 29,
+          "n_params": 77076992,
+          "sign_coherence": 0.000211,
+          "sign_entropy": 0.98734,
+          "pos_frac": 0.433857,
+          "trim_survival": 0.500159,
+          "mean_abs": 0.000276,
+          "bias_score": 0.049117
+        },
+        {
+          "layer_idx": 30,
+          "n_params": 77076992,
+          "sign_coherence": 0.000313,
+          "sign_entropy": 0.987421,
+          "pos_frac": 0.434069,
+          "trim_survival": 0.500309,
+          "mean_abs": 0.000276,
+          "bias_score": 0.05079
+        },
+        {
+          "layer_idx": 31,
+          "n_params": 77076992,
+          "sign_coherence": 0.000139,
+          "sign_entropy": 0.986786,
+          "pos_frac": 0.432431,
+          "trim_survival": 0.500125,
+          "mean_abs": 0.000271,
+          "bias_score": 0.051534
+        },
+        {
+          "layer_idx": 32,
+          "n_params": 77076992,
+          "sign_coherence": 5.8e-05,
+          "sign_entropy": 0.986297,
+          "pos_frac": 0.431196,
+          "trim_survival": 0.500164,
+          "mean_abs": 0.000272,
+          "bias_score": 0.05027
+        },
+        {
+          "layer_idx": 33,
+          "n_params": 77076992,
+          "sign_coherence": 3.2e-05,
+          "sign_entropy": 0.985944,
+          "pos_frac": 0.430318,
+          "trim_survival": 0.5,
+          "mean_abs": 0.00027,
+          "bias_score": 0.050656
+        },
+        {
+          "layer_idx": 34,
+          "n_params": 77076992,
+          "sign_coherence": 3.6e-05,
+          "sign_entropy": 0.986136,
+          "pos_frac": 0.430794,
+          "trim_survival": 0.500012,
+          "mean_abs": 0.000269,
+          "bias_score": 0.050824
+        },
+        {
+          "layer_idx": 35,
+          "n_params": 77076992,
+          "sign_coherence": 2.9e-05,
+          "sign_entropy": 0.985984,
+          "pos_frac": 0.430418,
+          "trim_survival": 0.499949,
+          "mean_abs": 0.000257,
+          "bias_score": 0.052001
+        }
+      ]
+    },
+    {
+      "model": "qwen_14b",
+      "n_layers": 48,
+      "thirds_coherence": {
+        "first": 9.8e-05,
+        "mid": 8.7e-05,
+        "last": 8.7e-05
+      },
+      "thirds_entropy": {
+        "first": 0.987636,
+        "mid": 0.987903,
+        "last": 0.987755
+      },
+      "thirds_survival": {
+        "first": 0.500082,
+        "mid": 0.500063,
+        "last": 0.50007
+      },
+      "dominant_coherence": "first",
+      "dominant_survival": "first",
+      "spearman_coherence_bias": 0.0663,
+      "spearman_coherence_bias_p": 0.6542,
+      "spearman_survival_bias": 0.0115,
+      "spearman_survival_bias_p": 0.9384,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 275268608,
+          "sign_coherence": 0.000127,
+          "sign_entropy": 0.987742,
+          "pos_frac": 0.434914,
+          "trim_survival": 0.500121,
+          "mean_abs": 0.000197,
+          "bias_score": 0.012208
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 275268608,
+          "sign_coherence": 0.000265,
+          "sign_entropy": 0.987562,
+          "pos_frac": 0.434438,
+          "trim_survival": 0.5003,
+          "mean_abs": 5.5e-05,
+          "bias_score": 0.012316
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 275268608,
+          "sign_coherence": 0.000113,
+          "sign_entropy": 0.990502,
+          "pos_frac": 0.442691,
+          "trim_survival": 0.500106,
+          "mean_abs": 8.4e-05,
+          "bias_score": 0.012105
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 275268608,
+          "sign_coherence": 6.4e-05,
+          "sign_entropy": 0.992674,
+          "pos_frac": 0.449655,
+          "trim_survival": 0.500016,
+          "mean_abs": 0.000125,
+          "bias_score": 0.012477
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 275268608,
+          "sign_coherence": 0.000144,
+          "sign_entropy": 0.990996,
+          "pos_frac": 0.444196,
+          "trim_survival": 0.500089,
+          "mean_abs": 0.000154,
+          "bias_score": 0.011772
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 275268608,
+          "sign_coherence": 1.6e-05,
+          "sign_entropy": 0.989468,
+          "pos_frac": 0.439656,
+          "trim_survival": 0.499982,
+          "mean_abs": 0.000175,
+          "bias_score": 0.011984
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 275268608,
+          "sign_coherence": 2.9e-05,
+          "sign_entropy": 0.988465,
+          "pos_frac": 0.436856,
+          "trim_survival": 0.500053,
+          "mean_abs": 0.000186,
+          "bias_score": 0.011048
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 275268608,
+          "sign_coherence": 1e-06,
+          "sign_entropy": 0.985839,
+          "pos_frac": 0.430059,
+          "trim_survival": 0.499999,
+          "mean_abs": 0.0002,
+          "bias_score": 0.011534
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 275268608,
+          "sign_coherence": 8.4e-05,
+          "sign_entropy": 0.985894,
+          "pos_frac": 0.430195,
+          "trim_survival": 0.500048,
+          "mean_abs": 0.000202,
+          "bias_score": 0.011318
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 275268608,
+          "sign_coherence": 0.00018,
+          "sign_entropy": 0.98593,
+          "pos_frac": 0.430283,
+          "trim_survival": 0.500204,
+          "mean_abs": 0.000205,
+          "bias_score": 0.011705
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 275268608,
+          "sign_coherence": 6.6e-05,
+          "sign_entropy": 0.98607,
+          "pos_frac": 0.430631,
+          "trim_survival": 0.500033,
+          "mean_abs": 0.000207,
+          "bias_score": 0.011327
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 275268608,
+          "sign_coherence": 1.8e-05,
+          "sign_entropy": 0.985822,
+          "pos_frac": 0.430016,
+          "trim_survival": 0.500004,
+          "mean_abs": 0.000206,
+          "bias_score": 0.01083
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 275268608,
+          "sign_coherence": 3.8e-05,
+          "sign_entropy": 0.986026,
+          "pos_frac": 0.430521,
+          "trim_survival": 0.500026,
+          "mean_abs": 0.000207,
+          "bias_score": 0.011395
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 275268608,
+          "sign_coherence": 8.9e-05,
+          "sign_entropy": 0.986099,
+          "pos_frac": 0.430702,
+          "trim_survival": 0.500055,
+          "mean_abs": 0.000208,
+          "bias_score": 0.009994
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 275268608,
+          "sign_coherence": 0.000119,
+          "sign_entropy": 0.986355,
+          "pos_frac": 0.43134,
+          "trim_survival": 0.500096,
+          "mean_abs": 0.00021,
+          "bias_score": 0.009863
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 275268608,
+          "sign_coherence": 0.000214,
+          "sign_entropy": 0.986727,
+          "pos_frac": 0.43228,
+          "trim_survival": 0.500175,
+          "mean_abs": 0.000213,
+          "bias_score": 0.010147
+        },
+        {
+          "layer_idx": 16,
+          "n_params": 275268608,
+          "sign_coherence": 9.6e-05,
+          "sign_entropy": 0.986833,
+          "pos_frac": 0.432551,
+          "trim_survival": 0.500089,
+          "mean_abs": 0.000213,
+          "bias_score": 0.009851
+        },
+        {
+          "layer_idx": 17,
+          "n_params": 275268608,
+          "sign_coherence": 9.1e-05,
+          "sign_entropy": 0.987038,
+          "pos_frac": 0.433077,
+          "trim_survival": 0.499982,
+          "mean_abs": 0.000215,
+          "bias_score": 0.00962
+        },
+        {
+          "layer_idx": 18,
+          "n_params": 275268608,
+          "sign_coherence": 7.4e-05,
+          "sign_entropy": 0.987109,
+          "pos_frac": 0.433259,
+          "trim_survival": 0.500113,
+          "mean_abs": 0.000216,
+          "bias_score": 0.007587
+        },
+        {
+          "layer_idx": 19,
+          "n_params": 275268608,
+          "sign_coherence": 8.1e-05,
+          "sign_entropy": 0.987502,
+          "pos_frac": 0.434282,
+          "trim_survival": 0.500052,
+          "mean_abs": 0.000217,
+          "bias_score": 0.006615
+        },
+        {
+          "layer_idx": 20,
+          "n_params": 275268608,
+          "sign_coherence": 1.5e-05,
+          "sign_entropy": 0.987558,
+          "pos_frac": 0.434428,
+          "trim_survival": 0.500031,
+          "mean_abs": 0.000218,
+          "bias_score": 0.004881
+        },
+        {
+          "layer_idx": 21,
+          "n_params": 275268608,
+          "sign_coherence": 7.4e-05,
+          "sign_entropy": 0.987677,
+          "pos_frac": 0.434741,
+          "trim_survival": 0.500144,
+          "mean_abs": 0.000219,
+          "bias_score": 0.003602
+        },
+        {
+          "layer_idx": 22,
+          "n_params": 275268608,
+          "sign_coherence": 7.8e-05,
+          "sign_entropy": 0.987848,
+          "pos_frac": 0.435195,
+          "trim_survival": 0.50004,
+          "mean_abs": 0.000221,
+          "bias_score": 0.003617
+        },
+        {
+          "layer_idx": 23,
+          "n_params": 275268608,
+          "sign_coherence": 0.000222,
+          "sign_entropy": 0.987947,
+          "pos_frac": 0.435458,
+          "trim_survival": 0.500124,
+          "mean_abs": 0.000222,
+          "bias_score": 0.003978
+        },
+        {
+          "layer_idx": 24,
+          "n_params": 275268608,
+          "sign_coherence": 0.000156,
+          "sign_entropy": 0.988014,
+          "pos_frac": 0.435638,
+          "trim_survival": 0.500098,
+          "mean_abs": 0.000223,
+          "bias_score": 0.004488
+        },
+        {
+          "layer_idx": 25,
+          "n_params": 275268608,
+          "sign_coherence": 4.4e-05,
+          "sign_entropy": 0.988418,
+          "pos_frac": 0.43673,
+          "trim_survival": 0.500018,
+          "mean_abs": 0.000226,
+          "bias_score": 0.00632
+        },
+        {
+          "layer_idx": 26,
+          "n_params": 275268608,
+          "sign_coherence": 2.2e-05,
+          "sign_entropy": 0.988423,
+          "pos_frac": 0.436743,
+          "trim_survival": 0.500039,
+          "mean_abs": 0.000226,
+          "bias_score": 0.007117
+        },
+        {
+          "layer_idx": 27,
+          "n_params": 275268608,
+          "sign_coherence": 7.8e-05,
+          "sign_entropy": 0.9885,
+          "pos_frac": 0.436952,
+          "trim_survival": 0.500058,
+          "mean_abs": 0.000226,
+          "bias_score": 0.008127
+        },
+        {
+          "layer_idx": 28,
+          "n_params": 275268608,
+          "sign_coherence": 0.000115,
+          "sign_entropy": 0.988424,
+          "pos_frac": 0.436745,
+          "trim_survival": 0.500046,
+          "mean_abs": 0.000228,
+          "bias_score": 0.008545
+        },
+        {
+          "layer_idx": 29,
+          "n_params": 275268608,
+          "sign_coherence": 0.000104,
+          "sign_entropy": 0.988468,
+          "pos_frac": 0.436866,
+          "trim_survival": 0.50004,
+          "mean_abs": 0.000228,
+          "bias_score": 0.009361
+        },
+        {
+          "layer_idx": 30,
+          "n_params": 275268608,
+          "sign_coherence": 1.7e-05,
+          "sign_entropy": 0.988326,
+          "pos_frac": 0.436478,
+          "trim_survival": 0.500074,
+          "mean_abs": 0.000229,
+          "bias_score": 0.010936
+        },
+        {
+          "layer_idx": 31,
+          "n_params": 275268608,
+          "sign_coherence": 0.000127,
+          "sign_entropy": 0.988369,
+          "pos_frac": 0.436595,
+          "trim_survival": 0.500067,
+          "mean_abs": 0.00023,
+          "bias_score": 0.011141
+        },
+        {
+          "layer_idx": 32,
+          "n_params": 275268608,
+          "sign_coherence": 9e-05,
+          "sign_entropy": 0.988462,
+          "pos_frac": 0.436849,
+          "trim_survival": 0.500122,
+          "mean_abs": 0.000232,
+          "bias_score": 0.010804
+        },
+        {
+          "layer_idx": 33,
+          "n_params": 275268608,
+          "sign_coherence": 4.8e-05,
+          "sign_entropy": 0.988449,
+          "pos_frac": 0.436814,
+          "trim_survival": 0.500037,
+          "mean_abs": 0.000232,
+          "bias_score": 0.011134
+        },
+        {
+          "layer_idx": 34,
+          "n_params": 275268608,
+          "sign_coherence": 0.000104,
+          "sign_entropy": 0.988438,
+          "pos_frac": 0.436783,
+          "trim_survival": 0.500083,
+          "mean_abs": 0.000232,
+          "bias_score": 0.011291
+        },
+        {
+          "layer_idx": 35,
+          "n_params": 275268608,
+          "sign_coherence": 9.9e-05,
+          "sign_entropy": 0.988117,
+          "pos_frac": 0.435914,
+          "trim_survival": 0.500058,
+          "mean_abs": 0.00023,
+          "bias_score": 0.01131
+        },
+        {
+          "layer_idx": 36,
+          "n_params": 275268608,
+          "sign_coherence": 6.8e-05,
+          "sign_entropy": 0.988085,
+          "pos_frac": 0.435829,
+          "trim_survival": 0.50011,
+          "mean_abs": 0.00023,
+          "bias_score": 0.011993
+        },
+        {
+          "layer_idx": 37,
+          "n_params": 275268608,
+          "sign_coherence": 7.5e-05,
+          "sign_entropy": 0.987934,
+          "pos_frac": 0.435424,
+          "trim_survival": 0.500036,
+          "mean_abs": 0.000229,
+          "bias_score": 0.012194
+        },
+        {
+          "layer_idx": 38,
+          "n_params": 275268608,
+          "sign_coherence": 0.000186,
+          "sign_entropy": 0.987784,
+          "pos_frac": 0.435025,
+          "trim_survival": 0.500085,
+          "mean_abs": 0.000229,
+          "bias_score": 0.012201
+        },
+        {
+          "layer_idx": 39,
+          "n_params": 275268608,
+          "sign_coherence": 9.3e-05,
+          "sign_entropy": 0.987578,
+          "pos_frac": 0.43448,
+          "trim_survival": 0.500104,
+          "mean_abs": 0.000228,
+          "bias_score": 0.012138
+        },
+        {
+          "layer_idx": 40,
+          "n_params": 275268608,
+          "sign_coherence": 0.000133,
+          "sign_entropy": 0.987672,
+          "pos_frac": 0.434729,
+          "trim_survival": 0.500068,
+          "mean_abs": 0.000228,
+          "bias_score": 0.012007
+        },
+        {
+          "layer_idx": 41,
+          "n_params": 275268608,
+          "sign_coherence": 0.000122,
+          "sign_entropy": 0.987531,
+          "pos_frac": 0.434357,
+          "trim_survival": 0.499995,
+          "mean_abs": 0.000228,
+          "bias_score": 0.012494
+        },
+        {
+          "layer_idx": 42,
+          "n_params": 275268608,
+          "sign_coherence": 9.1e-05,
+          "sign_entropy": 0.987494,
+          "pos_frac": 0.434259,
+          "trim_survival": 0.500057,
+          "mean_abs": 0.000228,
+          "bias_score": 0.011899
+        },
+        {
+          "layer_idx": 43,
+          "n_params": 275268608,
+          "sign_coherence": 8.7e-05,
+          "sign_entropy": 0.987541,
+          "pos_frac": 0.434384,
+          "trim_survival": 0.500031,
+          "mean_abs": 0.000228,
+          "bias_score": 0.01196
+        },
+        {
+          "layer_idx": 44,
+          "n_params": 275268608,
+          "sign_coherence": 1e-06,
+          "sign_entropy": 0.987529,
+          "pos_frac": 0.434352,
+          "trim_survival": 0.500081,
+          "mean_abs": 0.000228,
+          "bias_score": 0.012098
+        },
+        {
+          "layer_idx": 45,
+          "n_params": 275268608,
+          "sign_coherence": 4.6e-05,
+          "sign_entropy": 0.987354,
+          "pos_frac": 0.433895,
+          "trim_survival": 0.500021,
+          "mean_abs": 0.000225,
+          "bias_score": 0.011806
+        },
+        {
+          "layer_idx": 46,
+          "n_params": 275268608,
+          "sign_coherence": 0.000139,
+          "sign_entropy": 0.987172,
+          "pos_frac": 0.433422,
+          "trim_survival": 0.500152,
+          "mean_abs": 0.00022,
+          "bias_score": 0.011839
+        },
+        {
+          "layer_idx": 47,
+          "n_params": 275268608,
+          "sign_coherence": 1e-05,
+          "sign_entropy": 0.986946,
+          "pos_frac": 0.43284,
+          "trim_survival": 0.50008,
+          "mean_abs": 0.000215,
+          "bias_score": 0.013621
+        }
+      ]
+    },
+    {
+      "model": "gemma_2b",
+      "n_layers": 26,
+      "thirds_coherence": {
+        "first": 0.000261,
+        "mid": 0.000447,
+        "last": 0.000285
+      },
+      "thirds_entropy": {
+        "first": 1.0,
+        "mid": 1.0,
+        "last": 1.0
+      },
+      "thirds_survival": {
+        "first": 0.500222,
+        "mid": 0.500304,
+        "last": 0.500149
+      },
+      "dominant_coherence": "mid",
+      "dominant_survival": "mid",
+      "spearman_coherence_bias": -0.6128,
+      "spearman_coherence_bias_p": 0.0009,
+      "spearman_survival_bias": -0.4224,
+      "spearman_survival_bias_p": 0.0316,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 77865984,
+          "sign_coherence": 0.000152,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500054,
+          "trim_survival": 0.500084,
+          "mean_abs": 0.000457,
+          "bias_score": 0.167998
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 77865984,
+          "sign_coherence": 0.000169,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499992,
+          "trim_survival": 0.500224,
+          "mean_abs": 0.000449,
+          "bias_score": 0.183502
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 77865984,
+          "sign_coherence": 0.00032,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500115,
+          "trim_survival": 0.500188,
+          "mean_abs": 0.000445,
+          "bias_score": 0.174476
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 77865984,
+          "sign_coherence": 0.000141,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500031,
+          "trim_survival": 0.50015,
+          "mean_abs": 0.000449,
+          "bias_score": 0.183532
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 77865984,
+          "sign_coherence": 0.000172,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.50003,
+          "trim_survival": 0.500142,
+          "mean_abs": 0.00046,
+          "bias_score": 0.196753
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 77865984,
+          "sign_coherence": 0.000212,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499917,
+          "trim_survival": 0.500241,
+          "mean_abs": 0.000466,
+          "bias_score": 0.174974
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 77865984,
+          "sign_coherence": 0.00022,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499962,
+          "trim_survival": 0.500202,
+          "mean_abs": 0.000472,
+          "bias_score": 0.165436
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 77865984,
+          "sign_coherence": 0.0007,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499785,
+          "trim_survival": 0.500543,
+          "mean_abs": 0.000474,
+          "bias_score": 0.147427
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 77865984,
+          "sign_coherence": 0.000789,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.49973,
+          "trim_survival": 0.500598,
+          "mean_abs": 0.00048,
+          "bias_score": 0.154611
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 77865984,
+          "sign_coherence": 0.000409,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499842,
+          "trim_survival": 0.500274,
+          "mean_abs": 0.00049,
+          "bias_score": 0.16253
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 77865984,
+          "sign_coherence": 0.000464,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499863,
+          "trim_survival": 0.500321,
+          "mean_abs": 0.000503,
+          "bias_score": 0.149
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 77865984,
+          "sign_coherence": 0.000362,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499831,
+          "trim_survival": 0.500098,
+          "mean_abs": 0.00051,
+          "bias_score": 0.124993
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 77865984,
+          "sign_coherence": 0.00047,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.49983,
+          "trim_survival": 0.500356,
+          "mean_abs": 0.00052,
+          "bias_score": 0.129085
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 77865984,
+          "sign_coherence": 0.000495,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499852,
+          "trim_survival": 0.500336,
+          "mean_abs": 0.000528,
+          "bias_score": 0.178317
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 77865984,
+          "sign_coherence": 0.000502,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499872,
+          "trim_survival": 0.500468,
+          "mean_abs": 0.000529,
+          "bias_score": 0.146524
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 77865984,
+          "sign_coherence": 0.000399,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499875,
+          "trim_survival": 0.500274,
+          "mean_abs": 0.000524,
+          "bias_score": 0.162075
+        },
+        {
+          "layer_idx": 16,
+          "n_params": 77865984,
+          "sign_coherence": 0.000132,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499924,
+          "trim_survival": 0.500009,
+          "mean_abs": 0.000529,
+          "bias_score": 0.197892
+        },
+        {
+          "layer_idx": 17,
+          "n_params": 77865984,
+          "sign_coherence": 0.000355,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499884,
+          "trim_survival": 0.500199,
+          "mean_abs": 0.000529,
+          "bias_score": 0.145001
+        },
+        {
+          "layer_idx": 18,
+          "n_params": 77865984,
+          "sign_coherence": 0.000494,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499853,
+          "trim_survival": 0.500356,
+          "mean_abs": 0.000532,
+          "bias_score": 0.159763
+        },
+        {
+          "layer_idx": 19,
+          "n_params": 77865984,
+          "sign_coherence": 0.000381,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499862,
+          "trim_survival": 0.500206,
+          "mean_abs": 0.000536,
+          "bias_score": 0.14806
+        },
+        {
+          "layer_idx": 20,
+          "n_params": 77865984,
+          "sign_coherence": 0.000314,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499824,
+          "trim_survival": 0.500033,
+          "mean_abs": 0.000533,
+          "bias_score": 0.164721
+        },
+        {
+          "layer_idx": 21,
+          "n_params": 77865984,
+          "sign_coherence": 0.000119,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499895,
+          "trim_survival": 0.500065,
+          "mean_abs": 0.000527,
+          "bias_score": 0.165917
+        },
+        {
+          "layer_idx": 22,
+          "n_params": 77865984,
+          "sign_coherence": 0.0001,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499922,
+          "trim_survival": 0.500008,
+          "mean_abs": 0.000537,
+          "bias_score": 0.164294
+        },
+        {
+          "layer_idx": 23,
+          "n_params": 77865984,
+          "sign_coherence": 0.000112,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500026,
+          "trim_survival": 0.500097,
+          "mean_abs": 0.000548,
+          "bias_score": 0.175261
+        },
+        {
+          "layer_idx": 24,
+          "n_params": 77865984,
+          "sign_coherence": 0.000283,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500084,
+          "trim_survival": 0.500116,
+          "mean_abs": 0.000558,
+          "bias_score": 0.160805
+        },
+        {
+          "layer_idx": 25,
+          "n_params": 77865984,
+          "sign_coherence": 0.000409,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500084,
+          "trim_survival": 0.500262,
+          "mean_abs": 0.000526,
+          "bias_score": 0.167339
+        }
+      ]
+    },
+    {
+      "model": "gemma_9b",
+      "n_layers": 42,
+      "thirds_coherence": {
+        "first": 0.000194,
+        "mid": 0.000165,
+        "last": 0.000372
+      },
+      "thirds_entropy": {
+        "first": 1.0,
+        "mid": 1.0,
+        "last": 1.0
+      },
+      "thirds_survival": {
+        "first": 0.50013,
+        "mid": 0.500103,
+        "last": 0.500148
+      },
+      "dominant_coherence": "last",
+      "dominant_survival": "last",
+      "spearman_coherence_bias": 0.3032,
+      "spearman_coherence_bias_p": 0.051,
+      "spearman_survival_bias": 0.2493,
+      "spearman_survival_bias_p": 0.1113,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 198195200,
+          "sign_coherence": 0.000676,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499809,
+          "trim_survival": 0.500398,
+          "mean_abs": 0.001307,
+          "bias_score": 0.12184
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 198195200,
+          "sign_coherence": 0.000454,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499851,
+          "trim_survival": 0.500274,
+          "mean_abs": 0.001328,
+          "bias_score": 0.120712
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 198195200,
+          "sign_coherence": 0.000339,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499915,
+          "trim_survival": 0.500218,
+          "mean_abs": 0.001272,
+          "bias_score": 0.117039
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 198195200,
+          "sign_coherence": 0.000267,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499904,
+          "trim_survival": 0.500133,
+          "mean_abs": 0.001313,
+          "bias_score": 0.125446
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 198195200,
+          "sign_coherence": 0.000301,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.4999,
+          "trim_survival": 0.500181,
+          "mean_abs": 0.001296,
+          "bias_score": 0.112771
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 198195200,
+          "sign_coherence": 3.5e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500022,
+          "trim_survival": 0.499985,
+          "mean_abs": 0.001305,
+          "bias_score": 0.111189
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 198195200,
+          "sign_coherence": 0.000179,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.49992,
+          "trim_survival": 0.500065,
+          "mean_abs": 0.001306,
+          "bias_score": 0.11146
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 198195200,
+          "sign_coherence": 6.1e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499965,
+          "trim_survival": 0.50004,
+          "mean_abs": 0.001315,
+          "bias_score": 0.120743
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 198195200,
+          "sign_coherence": 0.000145,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500006,
+          "trim_survival": 0.500186,
+          "mean_abs": 0.001293,
+          "bias_score": 0.108252
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 198195200,
+          "sign_coherence": 7.1e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.49997,
+          "trim_survival": 0.500114,
+          "mean_abs": 0.001298,
+          "bias_score": 0.111904
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 198195200,
+          "sign_coherence": 3.1e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499982,
+          "trim_survival": 0.500064,
+          "mean_abs": 0.001271,
+          "bias_score": 0.106075
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 198195200,
+          "sign_coherence": 1.4e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500061,
+          "trim_survival": 0.500057,
+          "mean_abs": 0.001259,
+          "bias_score": 0.120236
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 198195200,
+          "sign_coherence": 1.6e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500012,
+          "trim_survival": 0.500022,
+          "mean_abs": 0.001269,
+          "bias_score": 0.117141
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 198195200,
+          "sign_coherence": 0.000126,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499976,
+          "trim_survival": 0.500084,
+          "mean_abs": 0.001266,
+          "bias_score": 0.088247
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 198195200,
+          "sign_coherence": 6e-06,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.5,
+          "trim_survival": 0.500042,
+          "mean_abs": 0.001241,
+          "bias_score": 0.109465
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 198195200,
+          "sign_coherence": 9e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499938,
+          "trim_survival": 0.499996,
+          "mean_abs": 0.0012,
+          "bias_score": 0.095921
+        },
+        {
+          "layer_idx": 16,
+          "n_params": 198195200,
+          "sign_coherence": 9.2e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500058,
+          "trim_survival": 0.499994,
+          "mean_abs": 0.001154,
+          "bias_score": 0.105184
+        },
+        {
+          "layer_idx": 17,
+          "n_params": 198195200,
+          "sign_coherence": 0.000342,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499938,
+          "trim_survival": 0.500337,
+          "mean_abs": 0.001127,
+          "bias_score": 0.090443
+        },
+        {
+          "layer_idx": 18,
+          "n_params": 198195200,
+          "sign_coherence": 1.2e-05,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499979,
+          "trim_survival": 0.50008,
+          "mean_abs": 0.001092,
+          "bias_score": 0.099817
+        },
+        {
+          "layer_idx": 19,
+          "n_params": 198195200,
+          "sign_coherence": 0.000106,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499977,
+          "trim_survival": 0.50007,
+          "mean_abs": 0.001067,
+          "bias_score": 0.097228
+        },
+        {
+          "layer_idx": 20,
+          "n_params": 198195200,
+          "sign_coherence": 0.000199,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499915,
+          "trim_survival": 0.500083,
+          "mean_abs": 0.001046,
+          "bias_score": 0.085214
+        },
+        {
+          "layer_idx": 21,
+          "n_params": 198195200,
+          "sign_coherence": 0.000151,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499963,
+          "trim_survival": 0.499985,
+          "mean_abs": 0.001006,
+          "bias_score": 0.095834
+        },
+        {
+          "layer_idx": 22,
+          "n_params": 198195200,
+          "sign_coherence": 0.000172,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.500003,
+          "trim_survival": 0.500112,
+          "mean_abs": 0.000972,
+          "bias_score": 0.100648
+        },
+        {
+          "layer_idx": 23,
+          "n_params": 198195200,
+          "sign_coherence": 0.000257,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499964,
+          "trim_survival": 0.500176,
+          "mean_abs": 0.000958,
+          "bias_score": 0.130902
+        },
+        {
+          "layer_idx": 24,
+          "n_params": 198195200,
+          "sign_coherence": 0.000145,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499998,
+          "trim_survival": 0.500129,
+          "mean_abs": 0.000941,
+          "bias_score": 0.115492
+        },
+        {
+          "layer_idx": 25,
+          "n_params": 198195200,
+          "sign_coherence": 0.000277,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499976,
+          "trim_survival": 0.500096,
+          "mean_abs": 0.000926,
+          "bias_score": 0.112414
+        },
+        {
+          "layer_idx": 26,
+          "n_params": 198195200,
+          "sign_coherence": 0.000264,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499935,
+          "trim_survival": 0.500194,
+          "mean_abs": 0.000892,
+          "bias_score": 0.116094
+        },
+        {
+          "layer_idx": 27,
+          "n_params": 198195200,
+          "sign_coherence": 0.00019,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499938,
+          "trim_survival": 0.500142,
+          "mean_abs": 0.000887,
+          "bias_score": 0.11401
+        },
+        {
+          "layer_idx": 28,
+          "n_params": 198195200,
+          "sign_coherence": 0.000196,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499957,
+          "trim_survival": 0.500192,
+          "mean_abs": 0.000919,
+          "bias_score": 0.130727
+        },
+        {
+          "layer_idx": 29,
+          "n_params": 198195200,
+          "sign_coherence": 0.000225,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499954,
+          "trim_survival": 0.500154,
+          "mean_abs": 0.000918,
+          "bias_score": 0.10738
+        },
+        {
+          "layer_idx": 30,
+          "n_params": 198195200,
+          "sign_coherence": 0.000378,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499901,
+          "trim_survival": 0.5002,
+          "mean_abs": 0.000941,
+          "bias_score": 0.120382
+        },
+        {
+          "layer_idx": 31,
+          "n_params": 198195200,
+          "sign_coherence": 0.000277,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499916,
+          "trim_survival": 0.500128,
+          "mean_abs": 0.000935,
+          "bias_score": 0.116148
+        },
+        {
+          "layer_idx": 32,
+          "n_params": 198195200,
+          "sign_coherence": 0.000312,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499912,
+          "trim_survival": 0.50016,
+          "mean_abs": 0.000956,
+          "bias_score": 0.114158
+        },
+        {
+          "layer_idx": 33,
+          "n_params": 198195200,
+          "sign_coherence": 0.000263,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499912,
+          "trim_survival": 0.500155,
+          "mean_abs": 0.000964,
+          "bias_score": 0.11615
+        },
+        {
+          "layer_idx": 34,
+          "n_params": 198195200,
+          "sign_coherence": 0.000205,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499922,
+          "trim_survival": 0.500162,
+          "mean_abs": 0.000959,
+          "bias_score": 0.107982
+        },
+        {
+          "layer_idx": 35,
+          "n_params": 198195200,
+          "sign_coherence": 0.000239,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499938,
+          "trim_survival": 0.500076,
+          "mean_abs": 0.000955,
+          "bias_score": 0.118804
+        },
+        {
+          "layer_idx": 36,
+          "n_params": 198195200,
+          "sign_coherence": 0.000317,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499881,
+          "trim_survival": 0.500197,
+          "mean_abs": 0.000953,
+          "bias_score": 0.114716
+        },
+        {
+          "layer_idx": 37,
+          "n_params": 198195200,
+          "sign_coherence": 0.00018,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.49998,
+          "trim_survival": 0.500045,
+          "mean_abs": 0.000948,
+          "bias_score": 0.116526
+        },
+        {
+          "layer_idx": 38,
+          "n_params": 198195200,
+          "sign_coherence": 0.000425,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499887,
+          "trim_survival": 0.500244,
+          "mean_abs": 0.000952,
+          "bias_score": 0.113758
+        },
+        {
+          "layer_idx": 39,
+          "n_params": 198195200,
+          "sign_coherence": 0.000169,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499953,
+          "trim_survival": 0.499949,
+          "mean_abs": 0.000928,
+          "bias_score": 0.120507
+        },
+        {
+          "layer_idx": 40,
+          "n_params": 198195200,
+          "sign_coherence": 0.000799,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499894,
+          "trim_survival": 0.500171,
+          "mean_abs": 0.000916,
+          "bias_score": 0.115065
+        },
+        {
+          "layer_idx": 41,
+          "n_params": 198195200,
+          "sign_coherence": 0.001229,
+          "sign_entropy": 1.0,
+          "pos_frac": 0.499904,
+          "trim_survival": 0.500235,
+          "mean_abs": 0.000898,
+          "bias_score": 0.109847
+        }
+      ]
+    },
+    {
+      "model": "llama32_3b",
+      "n_layers": 28,
+      "thirds_coherence": {
+        "first": 0.000202,
+        "mid": 0.000196,
+        "last": 0.000187
+      },
+      "thirds_entropy": {
+        "first": 0.999874,
+        "mid": 0.9999,
+        "last": 0.999905
+      },
+      "thirds_survival": {
+        "first": 0.500152,
+        "mid": 0.500091,
+        "last": 0.50009
+      },
+      "dominant_coherence": "first",
+      "dominant_survival": "first",
+      "spearman_coherence_bias": -0.1281,
+      "spearman_coherence_bias_p": 0.516,
+      "spearman_survival_bias": -0.124,
+      "spearman_survival_bias_p": 0.5296,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 100669440,
+          "sign_coherence": 0.000247,
+          "sign_entropy": 0.99985,
+          "pos_frac": 0.492784,
+          "trim_survival": 0.500198,
+          "mean_abs": 0.001829,
+          "bias_score": 0.179056
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 100669440,
+          "sign_coherence": 0.000147,
+          "sign_entropy": 0.999858,
+          "pos_frac": 0.492978,
+          "trim_survival": 0.500243,
+          "mean_abs": 0.001872,
+          "bias_score": 0.201994
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 100669440,
+          "sign_coherence": 0.000198,
+          "sign_entropy": 0.999876,
+          "pos_frac": 0.493442,
+          "trim_survival": 0.500233,
+          "mean_abs": 0.001985,
+          "bias_score": 0.179472
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 100669440,
+          "sign_coherence": 2e-06,
+          "sign_entropy": 0.999876,
+          "pos_frac": 0.493448,
+          "trim_survival": 0.499975,
+          "mean_abs": 0.002005,
+          "bias_score": 0.20784
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 100669440,
+          "sign_coherence": 0.000338,
+          "sign_entropy": 0.999871,
+          "pos_frac": 0.493316,
+          "trim_survival": 0.50025,
+          "mean_abs": 0.001999,
+          "bias_score": 0.214556
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 100669440,
+          "sign_coherence": 0.000178,
+          "sign_entropy": 0.999881,
+          "pos_frac": 0.493586,
+          "trim_survival": 0.500207,
+          "mean_abs": 0.002047,
+          "bias_score": 0.166855
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 100669440,
+          "sign_coherence": 0.00031,
+          "sign_entropy": 0.999878,
+          "pos_frac": 0.493497,
+          "trim_survival": 0.500056,
+          "mean_abs": 0.002073,
+          "bias_score": 0.202262
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 100669440,
+          "sign_coherence": 0.000146,
+          "sign_entropy": 0.999886,
+          "pos_frac": 0.493709,
+          "trim_survival": 0.500059,
+          "mean_abs": 0.002103,
+          "bias_score": 0.169302
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 100669440,
+          "sign_coherence": 0.000254,
+          "sign_entropy": 0.999892,
+          "pos_frac": 0.493871,
+          "trim_survival": 0.50015,
+          "mean_abs": 0.002139,
+          "bias_score": 0.172668
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 100669440,
+          "sign_coherence": 0.000252,
+          "sign_entropy": 0.999894,
+          "pos_frac": 0.493938,
+          "trim_survival": 0.500196,
+          "mean_abs": 0.002179,
+          "bias_score": 0.140516
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 100669440,
+          "sign_coherence": 0.000319,
+          "sign_entropy": 0.999901,
+          "pos_frac": 0.494129,
+          "trim_survival": 0.500284,
+          "mean_abs": 0.002214,
+          "bias_score": 0.093044
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 100669440,
+          "sign_coherence": 0.000207,
+          "sign_entropy": 0.999896,
+          "pos_frac": 0.49399,
+          "trim_survival": 0.500019,
+          "mean_abs": 0.002222,
+          "bias_score": 0.112874
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 100669440,
+          "sign_coherence": 0.000233,
+          "sign_entropy": 0.999899,
+          "pos_frac": 0.494084,
+          "trim_survival": 0.500074,
+          "mean_abs": 0.002256,
+          "bias_score": 0.106878
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 100669440,
+          "sign_coherence": 0.000171,
+          "sign_entropy": 0.999904,
+          "pos_frac": 0.494246,
+          "trim_survival": 0.500126,
+          "mean_abs": 0.002244,
+          "bias_score": 0.147803
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 100669440,
+          "sign_coherence": 5.1e-05,
+          "sign_entropy": 0.999899,
+          "pos_frac": 0.494093,
+          "trim_survival": 0.500022,
+          "mean_abs": 0.002264,
+          "bias_score": 0.179439
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 100669440,
+          "sign_coherence": 0.000239,
+          "sign_entropy": 0.999899,
+          "pos_frac": 0.494096,
+          "trim_survival": 0.500101,
+          "mean_abs": 0.002304,
+          "bias_score": 0.151964
+        },
+        {
+          "layer_idx": 16,
+          "n_params": 100669440,
+          "sign_coherence": 0.000112,
+          "sign_entropy": 0.999904,
+          "pos_frac": 0.494224,
+          "trim_survival": 0.499896,
+          "mean_abs": 0.002343,
+          "bias_score": 0.186774
+        },
+        {
+          "layer_idx": 17,
+          "n_params": 100669440,
+          "sign_coherence": 0.000177,
+          "sign_entropy": 0.999907,
+          "pos_frac": 0.494316,
+          "trim_survival": 0.500102,
+          "mean_abs": 0.002376,
+          "bias_score": 0.178064
+        },
+        {
+          "layer_idx": 18,
+          "n_params": 100669440,
+          "sign_coherence": 0.000222,
+          "sign_entropy": 0.999908,
+          "pos_frac": 0.494348,
+          "trim_survival": 0.50007,
+          "mean_abs": 0.002395,
+          "bias_score": 0.18452
+        },
+        {
+          "layer_idx": 19,
+          "n_params": 100669440,
+          "sign_coherence": 0.000373,
+          "sign_entropy": 0.999901,
+          "pos_frac": 0.494154,
+          "trim_survival": 0.500232,
+          "mean_abs": 0.002359,
+          "bias_score": 0.183649
+        },
+        {
+          "layer_idx": 20,
+          "n_params": 100669440,
+          "sign_coherence": 0.00025,
+          "sign_entropy": 0.999905,
+          "pos_frac": 0.494263,
+          "trim_survival": 0.500053,
+          "mean_abs": 0.002436,
+          "bias_score": 0.180406
+        },
+        {
+          "layer_idx": 21,
+          "n_params": 100669440,
+          "sign_coherence": 0.000309,
+          "sign_entropy": 0.999909,
+          "pos_frac": 0.494395,
+          "trim_survival": 0.500207,
+          "mean_abs": 0.002463,
+          "bias_score": 0.170086
+        },
+        {
+          "layer_idx": 22,
+          "n_params": 100669440,
+          "sign_coherence": 0.000192,
+          "sign_entropy": 0.999911,
+          "pos_frac": 0.494459,
+          "trim_survival": 0.500099,
+          "mean_abs": 0.002483,
+          "bias_score": 0.181269
+        },
+        {
+          "layer_idx": 23,
+          "n_params": 100669440,
+          "sign_coherence": 0.000165,
+          "sign_entropy": 0.999911,
+          "pos_frac": 0.494456,
+          "trim_survival": 0.50023,
+          "mean_abs": 0.00248,
+          "bias_score": 0.16889
+        },
+        {
+          "layer_idx": 24,
+          "n_params": 100669440,
+          "sign_coherence": 3.1e-05,
+          "sign_entropy": 0.999912,
+          "pos_frac": 0.494481,
+          "trim_survival": 0.500127,
+          "mean_abs": 0.002486,
+          "bias_score": 0.178974
+        },
+        {
+          "layer_idx": 25,
+          "n_params": 100669440,
+          "sign_coherence": 0.00016,
+          "sign_entropy": 0.999908,
+          "pos_frac": 0.494355,
+          "trim_survival": 0.500075,
+          "mean_abs": 0.002442,
+          "bias_score": 0.181008
+        },
+        {
+          "layer_idx": 26,
+          "n_params": 100669440,
+          "sign_coherence": 0.000101,
+          "sign_entropy": 0.999905,
+          "pos_frac": 0.49427,
+          "trim_survival": 0.499805,
+          "mean_abs": 0.002375,
+          "bias_score": 0.158932
+        },
+        {
+          "layer_idx": 27,
+          "n_params": 100669440,
+          "sign_coherence": 6.9e-05,
+          "sign_entropy": 0.999883,
+          "pos_frac": 0.49364,
+          "trim_survival": 0.500006,
+          "mean_abs": 0.002221,
+          "bias_score": 0.185892
+        }
+      ]
+    },
+    {
+      "model": "llama3_8b",
+      "n_layers": 32,
+      "thirds_coherence": {
+        "first": 0.000588,
+        "mid": 0.000812,
+        "last": 0.000112
+      },
+      "thirds_entropy": {
+        "first": 0.998716,
+        "mid": 0.999284,
+        "last": 0.998829
+      },
+      "thirds_survival": {
+        "first": 0.500084,
+        "mid": 0.500115,
+        "last": 0.500036
+      },
+      "dominant_coherence": "mid",
+      "dominant_survival": "mid",
+      "spearman_coherence_bias": -0.1802,
+      "spearman_coherence_bias_p": 0.3237,
+      "spearman_survival_bias": -0.0033,
+      "spearman_survival_bias_p": 0.9857,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 218112000,
+          "sign_coherence": 0.003429,
+          "sign_entropy": 0.99864,
+          "pos_frac": 0.478297,
+          "trim_survival": 0.500052,
+          "mean_abs": 0.000347,
+          "bias_score": 0.179814
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 218112000,
+          "sign_coherence": 5e-06,
+          "sign_entropy": 0.998486,
+          "pos_frac": 0.477101,
+          "trim_survival": 0.500032,
+          "mean_abs": 0.00035,
+          "bias_score": 0.126093
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 218112000,
+          "sign_coherence": 1.8e-05,
+          "sign_entropy": 0.998566,
+          "pos_frac": 0.477707,
+          "trim_survival": 0.500016,
+          "mean_abs": 0.00036,
+          "bias_score": 0.137325
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 218112000,
+          "sign_coherence": 0.00018,
+          "sign_entropy": 0.998512,
+          "pos_frac": 0.477293,
+          "trim_survival": 0.500101,
+          "mean_abs": 0.000362,
+          "bias_score": 0.137265
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 218112000,
+          "sign_coherence": 0.000159,
+          "sign_entropy": 0.99854,
+          "pos_frac": 0.477509,
+          "trim_survival": 0.500069,
+          "mean_abs": 0.000364,
+          "bias_score": 0.11674
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 218112000,
+          "sign_coherence": 0.000184,
+          "sign_entropy": 0.99859,
+          "pos_frac": 0.477895,
+          "trim_survival": 0.50011,
+          "mean_abs": 0.000369,
+          "bias_score": 0.133103
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 218112000,
+          "sign_coherence": 0.000133,
+          "sign_entropy": 0.998586,
+          "pos_frac": 0.477869,
+          "trim_survival": 0.500079,
+          "mean_abs": 0.000372,
+          "bias_score": 0.130055
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 218112000,
+          "sign_coherence": 9e-06,
+          "sign_entropy": 0.998614,
+          "pos_frac": 0.478086,
+          "trim_survival": 0.500093,
+          "mean_abs": 0.000375,
+          "bias_score": 0.121579
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 218112000,
+          "sign_coherence": 0.000201,
+          "sign_entropy": 0.998636,
+          "pos_frac": 0.478263,
+          "trim_survival": 0.500163,
+          "mean_abs": 0.000378,
+          "bias_score": 0.121284
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 218112000,
+          "sign_coherence": 0.001564,
+          "sign_entropy": 0.999986,
+          "pos_frac": 0.497823,
+          "trim_survival": 0.500123,
+          "mean_abs": 0.008403,
+          "bias_score": 0.091916
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 218112000,
+          "sign_coherence": 5e-06,
+          "sign_entropy": 0.998675,
+          "pos_frac": 0.47857,
+          "trim_survival": 0.499957,
+          "mean_abs": 0.000385,
+          "bias_score": 0.134375
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 218112000,
+          "sign_coherence": 5.9e-05,
+          "sign_entropy": 0.998705,
+          "pos_frac": 0.478821,
+          "trim_survival": 0.500018,
+          "mean_abs": 0.00039,
+          "bias_score": 0.087386
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 218112000,
+          "sign_coherence": 9.1e-05,
+          "sign_entropy": 0.998687,
+          "pos_frac": 0.478674,
+          "trim_survival": 0.500024,
+          "mean_abs": 0.000393,
+          "bias_score": 0.127061
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 218112000,
+          "sign_coherence": 0.000243,
+          "sign_entropy": 0.998736,
+          "pos_frac": 0.47907,
+          "trim_survival": 0.500138,
+          "mean_abs": 0.000401,
+          "bias_score": 0.134585
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 218112000,
+          "sign_coherence": 0.000219,
+          "sign_entropy": 0.998774,
+          "pos_frac": 0.479389,
+          "trim_survival": 0.500197,
+          "mean_abs": 0.000406,
+          "bias_score": 0.129959
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 218112000,
+          "sign_coherence": 0.00036,
+          "sign_entropy": 0.999706,
+          "pos_frac": 0.489903,
+          "trim_survival": 0.500859,
+          "mean_abs": 0.004982,
+          "bias_score": 0.050694
+        },
+        {
+          "layer_idx": 16,
+          "n_params": 218112000,
+          "sign_coherence": 0.000456,
+          "sign_entropy": 0.999881,
+          "pos_frac": 0.493581,
+          "trim_survival": 0.499542,
+          "mean_abs": 0.006467,
+          "bias_score": 0.037955
+        },
+        {
+          "layer_idx": 17,
+          "n_params": 218112000,
+          "sign_coherence": 0.00307,
+          "sign_entropy": 0.999582,
+          "pos_frac": 0.48796,
+          "trim_survival": 0.499739,
+          "mean_abs": 0.003985,
+          "bias_score": 0.13481
+        },
+        {
+          "layer_idx": 18,
+          "n_params": 218112000,
+          "sign_coherence": 0.001236,
+          "sign_entropy": 0.99988,
+          "pos_frac": 0.493557,
+          "trim_survival": 0.499964,
+          "mean_abs": 0.006471,
+          "bias_score": 0.108826
+        },
+        {
+          "layer_idx": 19,
+          "n_params": 218112000,
+          "sign_coherence": 0.00166,
+          "sign_entropy": 0.999749,
+          "pos_frac": 0.490672,
+          "trim_survival": 0.499948,
+          "mean_abs": 0.005009,
+          "bias_score": 0.114278
+        },
+        {
+          "layer_idx": 20,
+          "n_params": 218112000,
+          "sign_coherence": 0.001529,
+          "sign_entropy": 0.999754,
+          "pos_frac": 0.490758,
+          "trim_survival": 0.500882,
+          "mean_abs": 0.005261,
+          "bias_score": 0.132194
+        },
+        {
+          "layer_idx": 21,
+          "n_params": 218112000,
+          "sign_coherence": 0.000147,
+          "sign_entropy": 0.998909,
+          "pos_frac": 0.480554,
+          "trim_survival": 0.500014,
+          "mean_abs": 0.000441,
+          "bias_score": 0.124915
+        },
+        {
+          "layer_idx": 22,
+          "n_params": 218112000,
+          "sign_coherence": 0.000154,
+          "sign_entropy": 0.998921,
+          "pos_frac": 0.480663,
+          "trim_survival": 0.500061,
+          "mean_abs": 0.000445,
+          "bias_score": 0.12613
+        },
+        {
+          "layer_idx": 23,
+          "n_params": 218112000,
+          "sign_coherence": 0.000221,
+          "sign_entropy": 0.998931,
+          "pos_frac": 0.480759,
+          "trim_survival": 0.500127,
+          "mean_abs": 0.00045,
+          "bias_score": 0.121647
+        },
+        {
+          "layer_idx": 24,
+          "n_params": 218112000,
+          "sign_coherence": 6e-05,
+          "sign_entropy": 0.998935,
+          "pos_frac": 0.480789,
+          "trim_survival": 0.499988,
+          "mean_abs": 0.000452,
+          "bias_score": 0.126118
+        },
+        {
+          "layer_idx": 25,
+          "n_params": 218112000,
+          "sign_coherence": 7.1e-05,
+          "sign_entropy": 0.998931,
+          "pos_frac": 0.480759,
+          "trim_survival": 0.50002,
+          "mean_abs": 0.000454,
+          "bias_score": 0.125649
+        },
+        {
+          "layer_idx": 26,
+          "n_params": 218112000,
+          "sign_coherence": 8e-05,
+          "sign_entropy": 0.998927,
+          "pos_frac": 0.480717,
+          "trim_survival": 0.500036,
+          "mean_abs": 0.000456,
+          "bias_score": 0.12598
+        },
+        {
+          "layer_idx": 27,
+          "n_params": 218112000,
+          "sign_coherence": 5.9e-05,
+          "sign_entropy": 0.998913,
+          "pos_frac": 0.480592,
+          "trim_survival": 0.499934,
+          "mean_abs": 0.000457,
+          "bias_score": 0.125968
+        },
+        {
+          "layer_idx": 28,
+          "n_params": 218112000,
+          "sign_coherence": 0.000166,
+          "sign_entropy": 0.998895,
+          "pos_frac": 0.480436,
+          "trim_survival": 0.500102,
+          "mean_abs": 0.000459,
+          "bias_score": 0.125463
+        },
+        {
+          "layer_idx": 29,
+          "n_params": 218112000,
+          "sign_coherence": 0.0002,
+          "sign_entropy": 0.998832,
+          "pos_frac": 0.479885,
+          "trim_survival": 0.500146,
+          "mean_abs": 0.000456,
+          "bias_score": 0.121385
+        },
+        {
+          "layer_idx": 30,
+          "n_params": 218112000,
+          "sign_coherence": 6.8e-05,
+          "sign_entropy": 0.998751,
+          "pos_frac": 0.4792,
+          "trim_survival": 0.499918,
+          "mean_abs": 0.000447,
+          "bias_score": 0.128627
+        },
+        {
+          "layer_idx": 31,
+          "n_params": 218112000,
+          "sign_coherence": 3e-06,
+          "sign_entropy": 0.998179,
+          "pos_frac": 0.47488,
+          "trim_survival": 0.50005,
+          "mean_abs": 0.00041,
+          "bias_score": 0.144723
+        }
+      ]
+    },
+    {
+      "model": "llama32_1b",
+      "n_layers": 16,
+      "thirds_coherence": {
+        "first": 0.000159,
+        "mid": 0.000104,
+        "last": 0.000106
+      },
+      "thirds_entropy": {
+        "first": 0.999891,
+        "mid": 0.999917,
+        "last": 0.999924
+      },
+      "thirds_survival": {
+        "first": 0.500087,
+        "mid": 0.500124,
+        "last": 0.500051
+      },
+      "dominant_coherence": "first",
+      "dominant_survival": "mid",
+      "spearman_coherence_bias": -0.0265,
+      "spearman_coherence_bias_p": 0.9225,
+      "spearman_survival_bias": -0.1471,
+      "spearman_survival_bias_p": 0.5868,
+      "layer_metrics": [
+        {
+          "layer_idx": 0,
+          "n_params": 60817408,
+          "sign_coherence": 0.000145,
+          "sign_entropy": 0.999874,
+          "pos_frac": 0.49338,
+          "trim_survival": 0.500139,
+          "mean_abs": 0.001953,
+          "bias_score": 0.232153
+        },
+        {
+          "layer_idx": 1,
+          "n_params": 60817408,
+          "sign_coherence": 0.00019,
+          "sign_entropy": 0.999881,
+          "pos_frac": 0.493569,
+          "trim_survival": 0.50003,
+          "mean_abs": 0.002063,
+          "bias_score": 0.2143
+        },
+        {
+          "layer_idx": 2,
+          "n_params": 60817408,
+          "sign_coherence": 8.5e-05,
+          "sign_entropy": 0.999899,
+          "pos_frac": 0.494073,
+          "trim_survival": 0.50004,
+          "mean_abs": 0.002176,
+          "bias_score": 0.245664
+        },
+        {
+          "layer_idx": 3,
+          "n_params": 60817408,
+          "sign_coherence": 0.000375,
+          "sign_entropy": 0.999903,
+          "pos_frac": 0.494197,
+          "trim_survival": 0.50025,
+          "mean_abs": 0.00222,
+          "bias_score": 0.259841
+        },
+        {
+          "layer_idx": 4,
+          "n_params": 60817408,
+          "sign_coherence": 2e-06,
+          "sign_entropy": 0.9999,
+          "pos_frac": 0.494108,
+          "trim_survival": 0.499977,
+          "mean_abs": 0.002247,
+          "bias_score": 0.255261
+        },
+        {
+          "layer_idx": 5,
+          "n_params": 60817408,
+          "sign_coherence": 1.6e-05,
+          "sign_entropy": 0.999912,
+          "pos_frac": 0.494473,
+          "trim_survival": 0.499911,
+          "mean_abs": 0.002325,
+          "bias_score": 0.240845
+        },
+        {
+          "layer_idx": 6,
+          "n_params": 60817408,
+          "sign_coherence": 4.4e-05,
+          "sign_entropy": 0.999916,
+          "pos_frac": 0.494589,
+          "trim_survival": 0.500051,
+          "mean_abs": 0.002392,
+          "bias_score": 0.231762
+        },
+        {
+          "layer_idx": 7,
+          "n_params": 60817408,
+          "sign_coherence": 0.000231,
+          "sign_entropy": 0.99992,
+          "pos_frac": 0.494739,
+          "trim_survival": 0.500335,
+          "mean_abs": 0.002469,
+          "bias_score": 0.239305
+        },
+        {
+          "layer_idx": 8,
+          "n_params": 60817408,
+          "sign_coherence": 0.000209,
+          "sign_entropy": 0.99992,
+          "pos_frac": 0.494733,
+          "trim_survival": 0.500309,
+          "mean_abs": 0.002476,
+          "bias_score": 0.218768
+        },
+        {
+          "layer_idx": 9,
+          "n_params": 60817408,
+          "sign_coherence": 2.1e-05,
+          "sign_entropy": 0.999917,
+          "pos_frac": 0.494643,
+          "trim_survival": 0.500014,
+          "mean_abs": 0.00249,
+          "bias_score": 0.201435
+        },
+        {
+          "layer_idx": 10,
+          "n_params": 60817408,
+          "sign_coherence": 9.1e-05,
+          "sign_entropy": 0.999923,
+          "pos_frac": 0.494844,
+          "trim_survival": 0.500088,
+          "mean_abs": 0.002525,
+          "bias_score": 0.221792
+        },
+        {
+          "layer_idx": 11,
+          "n_params": 60817408,
+          "sign_coherence": 0.000111,
+          "sign_entropy": 0.999921,
+          "pos_frac": 0.494761,
+          "trim_survival": 0.500069,
+          "mean_abs": 0.002613,
+          "bias_score": 0.258561
+        },
+        {
+          "layer_idx": 12,
+          "n_params": 60817408,
+          "sign_coherence": 6.2e-05,
+          "sign_entropy": 0.999928,
+          "pos_frac": 0.494988,
+          "trim_survival": 0.499997,
+          "mean_abs": 0.00271,
+          "bias_score": 0.254955
+        },
+        {
+          "layer_idx": 13,
+          "n_params": 60817408,
+          "sign_coherence": 2.9e-05,
+          "sign_entropy": 0.999929,
+          "pos_frac": 0.495041,
+          "trim_survival": 0.50008,
+          "mean_abs": 0.002746,
+          "bias_score": 0.254463
+        },
+        {
+          "layer_idx": 14,
+          "n_params": 60817408,
+          "sign_coherence": 0.000218,
+          "sign_entropy": 0.999931,
+          "pos_frac": 0.495109,
+          "trim_survival": 0.499969,
+          "mean_abs": 0.00275,
+          "bias_score": 0.249583
+        },
+        {
+          "layer_idx": 15,
+          "n_params": 60817408,
+          "sign_coherence": 0.000127,
+          "sign_entropy": 0.999912,
+          "pos_frac": 0.494482,
+          "trim_survival": 0.500106,
+          "mean_abs": 0.00257,
+          "bias_score": 0.239457
+        }
+      ]
+    }
+  ]
+}

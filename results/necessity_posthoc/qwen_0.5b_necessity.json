@@ -1,0 +1,213 @@
+{
+  "alias": "qwen_0.5b",
+  "n_layers": 24,
+  "baseline_ambig_bias": 0.252093,
+  "thirds": {
+    "first": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "mid": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "last": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  "group_contributions": {
+    "first": {
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sum_delta": -0.004182,
+      "mean_delta": -0.000523,
+      "best_layer": 7,
+      "best_layer_bias": 0.243789,
+      "relative_contribution": -0.1608
+    },
+    "mid": {
+      "layers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sum_delta": 0.048549,
+      "mean_delta": 0.006069,
+      "best_layer": 10,
+      "best_layer_bias": 0.235569,
+      "relative_contribution": 1.8666
+    },
+    "last": {
+      "layers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "sum_delta": -0.018358,
+      "mean_delta": -0.002295,
+      "best_layer": 17,
+      "best_layer_bias": 0.250829,
+      "relative_contribution": -0.7058
+    }
+  },
+  "layers": [
+    {
+      "layer_idx": 0,
+      "bias_score": 0.255011,
+      "delta": -0.002917999999999976
+    },
+    {
+      "layer_idx": 1,
+      "bias_score": 0.251313,
+      "delta": 0.0007800000000000029
+    },
+    {
+      "layer_idx": 2,
+      "bias_score": 0.254262,
+      "delta": -0.0021689999999999765
+    },
+    {
+      "layer_idx": 3,
+      "bias_score": 0.258196,
+      "delta": -0.0061029999999999696
+    },
+    {
+      "layer_idx": 4,
+      "bias_score": 0.252814,
+      "delta": -0.0007209999999999717
+    },
+    {
+      "layer_idx": 5,
+      "bias_score": 0.253121,
+      "delta": -0.0010279999999999734
+    },
+    {
+      "layer_idx": 6,
+      "bias_score": 0.25242,
+      "delta": -0.0003269999999999662
+    },
+    {
+      "layer_idx": 7,
+      "bias_score": 0.243789,
+      "delta": 0.008304000000000006
+    },
+    {
+      "layer_idx": 8,
+      "bias_score": 0.247165,
+      "delta": 0.004928000000000016
+    },
+    {
+      "layer_idx": 9,
+      "bias_score": 0.242086,
+      "delta": 0.010007000000000016
+    },
+    {
+      "layer_idx": 10,
+      "bias_score": 0.235569,
+      "delta": 0.01652400000000001
+    },
+    {
+      "layer_idx": 11,
+      "bias_score": 0.247604,
+      "delta": 0.004489000000000021
+    },
+    {
+      "layer_idx": 12,
+      "bias_score": 0.243864,
+      "delta": 0.008229000000000014
+    },
+    {
+      "layer_idx": 13,
+      "bias_score": 0.246422,
+      "delta": 0.005671000000000009
+    },
+    {
+      "layer_idx": 14,
+      "bias_score": 0.251327,
+      "delta": 0.0007659999999999889
+    },
+    {
+      "layer_idx": 15,
+      "bias_score": 0.254158,
+      "delta": -0.0020649999999999835
+    },
+    {
+      "layer_idx": 16,
+      "bias_score": 0.26063,
+      "delta": -0.008536999999999961
+    },
+    {
+      "layer_idx": 17,
+      "bias_score": 0.250829,
+      "delta": 0.0012639999999999874
+    },
+    {
+      "layer_idx": 18,
+      "bias_score": 0.253429,
+      "delta": -0.0013360000000000039
+    },
+    {
+      "layer_idx": 19,
+      "bias_score": 0.252709,
+      "delta": -0.0006160000000000054
+    },
+    {
+      "layer_idx": 20,
+      "bias_score": 0.252063,
+      "delta": 3.0000000000030003e-05
+    },
+    {
+      "layer_idx": 21,
+      "bias_score": 0.251476,
+      "delta": 0.0006170000000000342
+    },
+    {
+      "layer_idx": 22,
+      "bias_score": 0.255318,
+      "delta": -0.003224999999999978
+    },
+    {
+      "layer_idx": 23,
+      "bias_score": 0.258648,
+      "delta": -0.0065549999999999775
+    }
+  ],
+  "note": "Linearity approximation: sum(delta_l for l in group). True necessity requires held-out injection runs."
+}

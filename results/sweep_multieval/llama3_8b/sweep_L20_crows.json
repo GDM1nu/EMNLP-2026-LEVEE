@@ -1,0 +1,88 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 1508,
+      "stereo_preferred": 995,
+      "anti_preferred": 513,
+      "bias_score": 65.98
+    },
+    "by_bias_type": {
+      "race-color": {
+        "total": 516,
+        "stereo_preferred": 332,
+        "bias_score": 64.34
+      },
+      "socioeconomic": {
+        "total": 172,
+        "stereo_preferred": 118,
+        "bias_score": 68.6
+      },
+      "gender": {
+        "total": 262,
+        "stereo_preferred": 165,
+        "bias_score": 62.98
+      },
+      "disability": {
+        "total": 60,
+        "stereo_preferred": 44,
+        "bias_score": 73.33
+      },
+      "nationality": {
+        "total": 159,
+        "stereo_preferred": 89,
+        "bias_score": 55.97
+      },
+      "sexual-orientation": {
+        "total": 84,
+        "stereo_preferred": 65,
+        "bias_score": 77.38
+      },
+      "physical-appearance": {
+        "total": 63,
+        "stereo_preferred": 47,
+        "bias_score": 74.6
+      },
+      "religion": {
+        "total": 105,
+        "stereo_preferred": 73,
+        "bias_score": 69.52
+      },
+      "age": {
+        "total": 87,
+        "stereo_preferred": 62,
+        "bias_score": 71.26
+      }
+    }
+  },
+  "exp": "sweep_L20_crows",
+  "model": "meta-llama/Meta-Llama-3-8B",
+  "model_path": "models--meta-llama--Meta-Llama-3-8B/snapshots/8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
+  "n_layers": 32,
+  "layer_idx": 20,
+  "alpha": 1.0,
+  "diff_sha256": "f414f2001f388f187d7fe33531257000c1bba9c704aa99a825cf80d77cfb4071",
+  "match_stats": {
+    "total_params": 291,
+    "matched_total": 291,
+    "matched_in_layers": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "apply_stats": {
+    "applied_params": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "timestamp": "2026-04-27T02:59:38.353216",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

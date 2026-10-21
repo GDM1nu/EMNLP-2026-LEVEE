@@ -1,0 +1,88 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 1508,
+      "stereo_preferred": 993,
+      "anti_preferred": 515,
+      "bias_score": 65.85
+    },
+    "by_bias_type": {
+      "race-color": {
+        "total": 516,
+        "stereo_preferred": 324,
+        "bias_score": 62.79
+      },
+      "socioeconomic": {
+        "total": 172,
+        "stereo_preferred": 128,
+        "bias_score": 74.42
+      },
+      "gender": {
+        "total": 262,
+        "stereo_preferred": 156,
+        "bias_score": 59.54
+      },
+      "disability": {
+        "total": 60,
+        "stereo_preferred": 43,
+        "bias_score": 71.67
+      },
+      "nationality": {
+        "total": 159,
+        "stereo_preferred": 93,
+        "bias_score": 58.49
+      },
+      "sexual-orientation": {
+        "total": 84,
+        "stereo_preferred": 66,
+        "bias_score": 78.57
+      },
+      "physical-appearance": {
+        "total": 63,
+        "stereo_preferred": 45,
+        "bias_score": 71.43
+      },
+      "religion": {
+        "total": 105,
+        "stereo_preferred": 79,
+        "bias_score": 75.24
+      },
+      "age": {
+        "total": 87,
+        "stereo_preferred": 59,
+        "bias_score": 67.82
+      }
+    }
+  },
+  "exp": "sweep_L17_crows",
+  "model": "meta-llama/Llama-3.2-3B",
+  "model_path": "models--meta-llama--Llama-3.2-3B/snapshots/13afe5124825b4f3751f836b40dafda64c1ed062",
+  "n_layers": 28,
+  "layer_idx": 17,
+  "alpha": 1.0,
+  "diff_sha256": "a94a5a93c33f38f54f6e13505883606128ce3d2c2aff21accb298d15b46c4840",
+  "match_stats": {
+    "total_params": 254,
+    "matched_total": 254,
+    "matched_in_layers": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "apply_stats": {
+    "applied_params": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "timestamp": "2026-04-27T08:17:11.028173",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

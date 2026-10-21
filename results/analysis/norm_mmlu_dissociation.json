@@ -1,0 +1,116 @@
+{
+  "has_mmlu": true,
+  "hypothesis": "High-norm third removal → large BBQ Δ (bias-sensitive) but small MMLU Δ (capability-spared) = bias-specific weight concentration",
+  "models": [
+    {
+      "model": "qwen_3b",
+      "n_layers": 36,
+      "norm_thirds": {
+        "first": 2.2904,
+        "mid": 2.8485,
+        "last": 3.0363
+      },
+      "dominant_norm": "last",
+      "bbq_full": 0.000192,
+      "bbq_delta": {
+        "minus_first": 0.00018,
+        "minus_mid": 0.018824,
+        "minus_last": 0.000186
+      },
+      "mmlu_full": 0.638,
+      "mmlu_delta": {
+        "minus_first": 0.0029,
+        "minus_mid": -0.0081,
+        "minus_last": 0.0031
+      }
+    },
+    {
+      "model": "llama32_3b",
+      "n_layers": 28,
+      "norm_thirds": {
+        "first": 25.5512,
+        "mid": 29.017,
+        "last": 30.7061
+      },
+      "dominant_norm": "last",
+      "bbq_full": 0.034761,
+      "bbq_delta": {
+        "minus_first": -0.010772,
+        "minus_mid": 0.214555,
+        "minus_last": -0.001574
+      },
+      "mmlu_full": 0.5642,
+      "mmlu_delta": {
+        "minus_first": -0.0102,
+        "minus_mid": -0.0477,
+        "minus_last": -0.0018
+      }
+    },
+    {
+      "model": "gemma_2b",
+      "n_layers": 26,
+      "norm_thirds": {
+        "first": 5.1109,
+        "mid": 5.7141,
+        "last": 5.9812
+      },
+      "dominant_norm": "last",
+      "bbq_full": 0.015569,
+      "bbq_delta": {
+        "minus_first": -0.005584,
+        "minus_mid": 0.168709,
+        "minus_last": 0.000356
+      },
+      "mmlu_full": 0.4965,
+      "mmlu_delta": {
+        "minus_first": -0.1238,
+        "minus_mid": -0.0672,
+        "minus_last": 0.0088
+      }
+    },
+    {
+      "model": "gemma_9b",
+      "n_layers": 42,
+      "norm_thirds": {
+        "first": 23.0085,
+        "mid": 18.6553,
+        "last": 16.9621
+      },
+      "dominant_norm": "first",
+      "bbq_full": 0.00015,
+      "bbq_delta": {
+        "minus_first": 0.001128,
+        "minus_mid": 0.057437,
+        "minus_last": -1e-06
+      },
+      "mmlu_full": 0.6359,
+      "mmlu_delta": {
+        "minus_first": -0.3502,
+        "minus_mid": -0.0394,
+        "minus_last": -0.0046
+      }
+    },
+    {
+      "model": "llama3_8b",
+      "n_layers": 32,
+      "norm_thirds": {
+        "first": 23.069,
+        "mid": 77.9065,
+        "last": 8.3668
+      },
+      "dominant_norm": "mid",
+      "bbq_full": 0.067479,
+      "bbq_delta": {
+        "minus_first": -0.010988,
+        "minus_mid": 0.114911,
+        "minus_last": -0.005105
+      },
+      "mmlu_full": 0.2521,
+      "mmlu_delta": {
+        "minus_first": 0.0496,
+        "minus_mid": 0.0205,
+        "minus_last": -0.0012
+      }
+    }
+  ]
+}

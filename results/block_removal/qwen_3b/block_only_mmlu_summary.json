@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "model_path": "models--Qwen--Qwen2.5-3B/snapshots/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "n_layers": 36,
+  "alpha": 1.0,
+  "seed": 0,
+  "git_hash": "3ae2dcb",
+  "mmlu_tasks": [
+    "mmlu_abstract_algebra",
+    "mmlu_high_school_mathematics",
+    "mmlu_high_school_physics",
+    "mmlu_high_school_computer_science",
+    "mmlu_philosophy",
+    "mmlu_high_school_world_history",
+    "mmlu_moral_scenarios",
+    "mmlu_sociology",
+    "mmlu_high_school_psychology",
+    "mmlu_high_school_government_and_politics",
+    "mmlu_high_school_statistics",
+    "mmlu_professional_law",
+    "mmlu_medical_genetics",
+    "mmlu_global_facts"
+  ],
+  "diff_sha256": "502eca5e74791ae2f46b0cdd5f20dda8bce81f0b343eb705f6818ae52e781f92",
+  "timestamp": "2026-05-07T16:08:09.927129",
+  "results": [
+    {
+      "condition": "baseline",
+      "n_injected": 0,
+      "mmlu_acc": 0.6236391890108205
+    },
+    {
+      "condition": "only_first",
+      "n_injected": 12,
+      "mmlu_acc": 0.6255966563779942
+    },
+    {
+      "condition": "only_mid",
+      "n_injected": 12,
+      "mmlu_acc": 0.6415318697685243
+    },
+    {
+      "condition": "only_last",
+      "n_injected": 12,
+      "mmlu_acc": 0.6286663802288037
+    }
+  ]
+}

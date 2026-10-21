@@ -1,0 +1,67 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 2123,
+      "lm_score": 87.09,
+      "ss_score": 58.9,
+      "icat": 143.19
+    },
+    "by_bias_type": {
+      "race": {
+        "total": 976,
+        "lm_score": 87.81,
+        "ss_score": 56.71,
+        "icat": 152.05
+      },
+      "gender": {
+        "total": 242,
+        "lm_score": 84.3,
+        "ss_score": 63.24,
+        "icat": 123.97
+      },
+      "profession": {
+        "total": 827,
+        "lm_score": 86.82,
+        "ss_score": 60.58,
+        "icat": 136.88
+      },
+      "religion": {
+        "total": 78,
+        "lm_score": 89.74,
+        "ss_score": 55.71,
+        "icat": 158.97
+      }
+    }
+  },
+  "exp": "sweep_L03_stereoset",
+  "model": "meta-llama/Meta-Llama-3-8B",
+  "model_path": "models--meta-llama--Meta-Llama-3-8B/snapshots/8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
+  "n_layers": 32,
+  "layer_idx": 3,
+  "alpha": 1.0,
+  "diff_sha256": "f414f2001f388f187d7fe33531257000c1bba9c704aa99a825cf80d77cfb4071",
+  "match_stats": {
+    "total_params": 291,
+    "matched_total": 291,
+    "matched_in_layers": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "apply_stats": {
+    "applied_params": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "timestamp": "2026-04-27T02:48:48.532758",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

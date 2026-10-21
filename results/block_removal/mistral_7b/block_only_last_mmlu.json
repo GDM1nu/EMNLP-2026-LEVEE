@@ -1,0 +1,91 @@
+{
+  "exp": "block_only_last_mmlu",
+  "model": "hub/models--mistralai--Mistral-7B-v0.1/snapshots/27d67f1b5f57dc0953326b2601d68371d40ea8da",
+  "n_layers": 32,
+  "condition": "only_last",
+  "layers_injected": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "layers_excluded": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "alpha": 1.0,
+  "mmlu_tasks": [
+    "mmlu_abstract_algebra",
+    "mmlu_high_school_mathematics",
+    "mmlu_high_school_physics",
+    "mmlu_high_school_computer_science",
+    "mmlu_philosophy",
+    "mmlu_high_school_world_history",
+    "mmlu_moral_scenarios",
+    "mmlu_sociology",
+    "mmlu_high_school_psychology",
+    "mmlu_high_school_government_and_politics",
+    "mmlu_high_school_statistics",
+    "mmlu_professional_law",
+    "mmlu_medical_genetics",
+    "mmlu_global_facts"
+  ],
+  "diff_sha256": "45ae570f569509b7639298bb286f049e9c82b43a868577144e04dd8775d2576d",
+  "mmlu_acc": 0.5722899761498746,
+  "subtask_scores": {
+    "mmlu_abstract_algebra": 0.3,
+    "mmlu_global_facts": 0.36,
+    "mmlu_high_school_computer_science": 0.67,
+    "mmlu_high_school_government_and_politics": 0.8601036269430051,
+    "mmlu_high_school_mathematics": 0.3333333333333333,
+    "mmlu_high_school_physics": 0.33112582781456956,
+    "mmlu_high_school_psychology": 0.8256880733944955,
+    "mmlu_high_school_statistics": 0.5231481481481481,
+    "mmlu_high_school_world_history": 0.7805907172995781,
+    "mmlu_medical_genetics": 0.71,
+    "mmlu_moral_scenarios": 0.358659217877095,
+    "mmlu_philosophy": 0.6913183279742765,
+    "mmlu_professional_law": 0.4471968709256845,
+    "mmlu_sociology": 0.8208955223880597
+  },
+  "apply_stats": {
+    "applied_params": 99,
+    "bucket_counts": {
+      "attn": 44,
+      "mlp": 33,
+      "norm": 22
+    }
+  },
+  "timestamp": "2026-07-11T00:18:58.838072",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

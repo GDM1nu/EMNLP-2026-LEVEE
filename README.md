@@ -1,27 +1,77 @@
 # LEVEE: Layer-wise Evaluation of Vector Encoding Effects
 
-Code for the EMNLP 2026 (Main Conference) paper
-*LEVEE: Layer-wise Evaluation of Vector Encoding Effects — Bias Localization and Functional Separation across 11 LLMs*.
+**EMNLP 2026 (Main Conference)** · Dongmin Kim, Youhyun Shin
+
+*LEVEE: Layer-wise Evaluation of Vector Encoding Effects — Bias Localization and Functional Separation across 11 LLMs*
+
+[Quick start](#quick-start) · [Key results](#key-results) · [Reproducing](#reproducing-main-results) · [Scoring](#scoring-paper-32) · [Citation](#citation)
+
+---
 
 ## Overview
 
-We characterize the layer-wise behavioral structure of the alignment task vector
-ΔW (W_instruct − W_base) across 11 instruction-tuned LLMs (0.5B–14B parameters).
-Experiments inject ΔW independently at each layer and measure BBQ bias score,
-MMLU accuracy, and related benchmarks.
+Task-vector methods treat the alignment update ΔW = W_instruct − W_base as one
+monolithic object. We open it up: we inject each layer's ΔW into the base model
+independently and measure bias (BBQ) and capability (MMLU), across 11
+instruction-tuned LLMs (0.5B–14B; Qwen2.5, Gemma-2/3, Llama-3.x). Five designs
+cover sufficiency (per-layer sweep, cumulative injection), necessity (block
+removal), and directional specificity (sign-flip, norm-matched controls).
+
+![Per-layer L-BBQ sweep: bias suppression is concentrated in the mid-third](assets/fig_per_layer_sweep.png)
 
 **Three main findings:**
 
-1. **Layer-wise localization** — bias suppression localizes to the mid-third of
-   layers in 9 of 11 models; mid-third removal raises bias in all 11.
-2. **Functional separation** — in Gemma-2 models, first-third removal reduces MMLU
-   by up to 35 pp (Gemma-2-9B) while mid-third removal instead raises bias.
-3. **Active suppression** — in 3 of 11 models, removing mid-third ΔW raises bias
-   above the unaligned base, confirming that the outer thirds encode a latent
-   bias-amplifying signal.
+1. **Layer-wise localization** — all 9 structured-signal models show a mid-third
+   minimum in the per-layer BBQ profile; mid-third block removal raises L-BBQ in
+   all 11 models (ΔL-BBQ +0.007 to +0.215) and is the most critical third in 10 of 11.
+2. **Functional separation** — in Gemma-2 models, removing the first third reduces
+   MMLU by up to 35.0 pp (Gemma-2-9B) with |ΔL-BBQ| ≤ 0.006, while mid-third
+   removal causes larger BBQ changes but smaller MMLU losses.
+3. **Active suppression** — in 3 of 11 models (Gemma-2-2B, Llama-3.2-3B,
+   Llama-3-8B), removing the mid-third yields a model *more biased than the
+   unaligned base* (up to +46% above base): partial ΔW transfer that omits the
+   mid-third can be worse than no transfer.
 
 **Models tested:** Qwen2.5 (0.5B/1.5B/3B/14B), Gemma-2 (2B/9B), Gemma-3-12B,
 Llama-3.2 (1B/3B), Llama-3-8B, Llama-3.1-8B.
+
+## Key results
+
+![Block removal: bias (top) and capability (bottom)](assets/fig_block_removal.png)
+
+Block removal (paper Table 4). `base` is the un-injected L-BBQ; the other columns are
+ΔL-BBQ relative to full ΔW (positive = more biased after removing that third).
+**Bold** = post-removal bias exceeds `base` (active suppression).
+
+| Model | base | −mid | −first | −last |
+|---|---:|---:|---:|---:|
+| Qwen2.5-0.5B ‡ | 0.252 | +0.078 | +0.119 | −0.003 |
+| Qwen2.5-1.5B ‡ | 0.273 | +0.118 | +0.045 | +0.004 |
+| Qwen2.5-3B | 0.050 | +0.019 | <0.001 | <0.001 |
+| Qwen2.5-14B | 0.013 | +0.007 | <0.001 | <0.001 |
+| Gemma-2-2B | 0.160 | **+0.169** | −0.006 | <0.001 |
+| Gemma-2-9B | 0.116 | +0.057 | +0.001 | <0.001 |
+| Gemma-3-12B | 0.095 | +0.069 | +0.020 | <0.001 |
+| Llama-3.2-1B | 0.251 | +0.111 | +0.014 | +0.013 |
+| Llama-3.2-3B | 0.176 | **+0.215** | −0.011 | −0.002 |
+| Llama-3-8B | 0.125 | **+0.115** | −0.011 | −0.005 |
+| Llama-3.1-8B | 0.118 | +0.030 | +0.028 | −0.001 |
+
+‡ diffuse-signal models (Qwen2.5-0.5B/1.5B); Llama-3.1-8B is borderline (see paper).
+`base` values are as printed in the paper; they can differ from the pre-computed
+JSONs in the third decimal (≤ 0.002).
+
+## Quick start
+
+```bash
+git clone https://github.com/GDM1nu/EMNLP-2026-LEVEE && cd EMNLP-2026-LEVEE
+pip install -r requirements.txt
+python scripts/paper_validation.py   # regenerates the paper's numeric claims from results/ (no GPU needed)
+```
+
+`results/` ships the pre-computed JSON files, so tables and figures can be
+regenerated without any model weights. Re-running the experiments themselves
+needs the GPU/disk resources listed under [Hardware](#hardware).
 
 ---
 
@@ -177,8 +227,8 @@ python pilot/run_pilot.py --model qwen_3b --gpu 0         # re-scoring pilot (pe
 
 ## Pre-computed Results
 
-The `results/` directory contains pre-computed JSON files for all main tables
-and figures. To regenerate figures from pre-computed results without re-running
+The `results/` directory contains the pre-computed JSON files (~40 MB) behind the
+main tables and figures. To regenerate figures from pre-computed results without re-running
 experiments:
 
 ```bash

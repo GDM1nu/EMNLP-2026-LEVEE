@@ -1,0 +1,88 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 1508,
+      "stereo_preferred": 973,
+      "anti_preferred": 535,
+      "bias_score": 64.52
+    },
+    "by_bias_type": {
+      "race-color": {
+        "total": 516,
+        "stereo_preferred": 308,
+        "bias_score": 59.69
+      },
+      "socioeconomic": {
+        "total": 172,
+        "stereo_preferred": 123,
+        "bias_score": 71.51
+      },
+      "gender": {
+        "total": 262,
+        "stereo_preferred": 153,
+        "bias_score": 58.4
+      },
+      "disability": {
+        "total": 60,
+        "stereo_preferred": 46,
+        "bias_score": 76.67
+      },
+      "nationality": {
+        "total": 159,
+        "stereo_preferred": 90,
+        "bias_score": 56.6
+      },
+      "sexual-orientation": {
+        "total": 84,
+        "stereo_preferred": 67,
+        "bias_score": 79.76
+      },
+      "physical-appearance": {
+        "total": 63,
+        "stereo_preferred": 51,
+        "bias_score": 80.95
+      },
+      "religion": {
+        "total": 105,
+        "stereo_preferred": 79,
+        "bias_score": 75.24
+      },
+      "age": {
+        "total": 87,
+        "stereo_preferred": 56,
+        "bias_score": 64.37
+      }
+    }
+  },
+  "exp": "sweep_L13_crows",
+  "model": "Qwen/Qwen2.5-14B",
+  "model_path": "models--Qwen--Qwen2.5-14B/snapshots/97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "n_layers": 48,
+  "layer_idx": 13,
+  "alpha": 1.0,
+  "diff_sha256": "a1911ae6c323469aebe8cdc284abe702711c98287bda8c6e69a47eea519c867f",
+  "match_stats": {
+    "total_params": 579,
+    "matched_total": 579,
+    "matched_in_layers": 12,
+    "bucket_counts": {
+      "attn": 7,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "apply_stats": {
+    "applied_params": 12,
+    "bucket_counts": {
+      "attn": 7,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "timestamp": "2026-04-27T03:25:48.197007",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

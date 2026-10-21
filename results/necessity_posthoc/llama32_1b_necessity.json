@@ -1,0 +1,157 @@
+{
+  "alias": "llama32_1b",
+  "n_layers": 16,
+  "baseline_ambig_bias": 0.2508,
+  "thirds": {
+    "first": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "mid": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "last": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "group_contributions": {
+    "first": {
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sum_delta": 0.046781,
+      "mean_delta": 0.009356,
+      "best_layer": 1,
+      "best_layer_bias": 0.2143,
+      "relative_contribution": 0.2403
+    },
+    "mid": {
+      "layers": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sum_delta": 0.121885,
+      "mean_delta": 0.024377,
+      "best_layer": 9,
+      "best_layer_bias": 0.201435,
+      "relative_contribution": 0.6262
+    },
+    "last": {
+      "layers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sum_delta": 0.025989,
+      "mean_delta": 0.004332,
+      "best_layer": 10,
+      "best_layer_bias": 0.221792,
+      "relative_contribution": 0.1335
+    }
+  },
+  "layers": [
+    {
+      "layer_idx": 0,
+      "bias_score": 0.232153,
+      "delta": 0.018647000000000025
+    },
+    {
+      "layer_idx": 1,
+      "bias_score": 0.2143,
+      "delta": 0.03650000000000003
+    },
+    {
+      "layer_idx": 2,
+      "bias_score": 0.245664,
+      "delta": 0.005136000000000029
+    },
+    {
+      "layer_idx": 3,
+      "bias_score": 0.259841,
+      "delta": -0.009040999999999966
+    },
+    {
+      "layer_idx": 4,
+      "bias_score": 0.255261,
+      "delta": -0.004460999999999993
+    },
+    {
+      "layer_idx": 5,
+      "bias_score": 0.240845,
+      "delta": 0.00995500000000002
+    },
+    {
+      "layer_idx": 6,
+      "bias_score": 0.231762,
+      "delta": 0.019038000000000027
+    },
+    {
+      "layer_idx": 7,
+      "bias_score": 0.239305,
+      "delta": 0.011495000000000033
+    },
+    {
+      "layer_idx": 8,
+      "bias_score": 0.218768,
+      "delta": 0.03203200000000003
+    },
+    {
+      "layer_idx": 9,
+      "bias_score": 0.201435,
+      "delta": 0.04936500000000002
+    },
+    {
+      "layer_idx": 10,
+      "bias_score": 0.221792,
+      "delta": 0.029008000000000034
+    },
+    {
+      "layer_idx": 11,
+      "bias_score": 0.258561,
+      "delta": -0.007760999999999962
+    },
+    {
+      "layer_idx": 12,
+      "bias_score": 0.254955,
+      "delta": -0.004154999999999964
+    },
+    {
+      "layer_idx": 13,
+      "bias_score": 0.254463,
+      "delta": -0.003662999999999972
+    },
+    {
+      "layer_idx": 14,
+      "bias_score": 0.249583,
+      "delta": 0.0012170000000000236
+    },
+    {
+      "layer_idx": 15,
+      "bias_score": 0.239457,
+      "delta": 0.01134300000000002
+    }
+  ],
+  "note": "Linearity approximation: sum(delta_l for l in group). True necessity requires held-out injection runs."
+}

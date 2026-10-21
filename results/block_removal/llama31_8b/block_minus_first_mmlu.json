@@ -1,0 +1,91 @@
+{
+  "exp": "block_minus_first_mmlu",
+  "model": "meta-llama/Meta-Llama-3.1-8B",
+  "n_layers": 32,
+  "condition": "minus_first",
+  "layers_injected": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "layers_excluded": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "alpha": 1.0,
+  "mmlu_tasks": [
+    "mmlu_abstract_algebra",
+    "mmlu_high_school_mathematics",
+    "mmlu_high_school_physics",
+    "mmlu_high_school_computer_science",
+    "mmlu_philosophy",
+    "mmlu_high_school_world_history",
+    "mmlu_moral_scenarios",
+    "mmlu_sociology",
+    "mmlu_high_school_psychology",
+    "mmlu_high_school_government_and_politics",
+    "mmlu_high_school_statistics",
+    "mmlu_professional_law",
+    "mmlu_medical_genetics",
+    "mmlu_global_facts"
+  ],
+  "diff_sha256": "4d705c99e7b3f74696d0362a1bd5a925614f2ba7146922acf6a4fe38016f46c2",
+  "mmlu_acc": 0.6301723120542121,
+  "subtask_scores": {
+    "mmlu_abstract_algebra": 0.34,
+    "mmlu_global_facts": 0.4,
+    "mmlu_high_school_computer_science": 0.68,
+    "mmlu_high_school_government_and_politics": 0.8860103626943006,
+    "mmlu_high_school_mathematics": 0.3814814814814815,
+    "mmlu_high_school_physics": 0.4768211920529801,
+    "mmlu_high_school_psychology": 0.8660550458715597,
+    "mmlu_high_school_statistics": 0.5185185185185185,
+    "mmlu_high_school_world_history": 0.8565400843881856,
+    "mmlu_medical_genetics": 0.81,
+    "mmlu_moral_scenarios": 0.4782122905027933,
+    "mmlu_philosophy": 0.7459807073954984,
+    "mmlu_professional_law": 0.5071707953063885,
+    "mmlu_sociology": 0.8756218905472637
+  },
+  "apply_stats": {
+    "applied_params": 198,
+    "bucket_counts": {
+      "attn": 88,
+      "mlp": 66,
+      "norm": 44
+    }
+  },
+  "timestamp": "2026-05-22T02:14:27.531749",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

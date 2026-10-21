@@ -1,0 +1,3599 @@
+{
+  "model": "meta-llama/Meta-Llama-3.1-8B",
+  "model_path": "models--meta-llama--Meta-Llama-3.1-8B/snapshots/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+  "n_layers": 32,
+  "alpha": 1.0,
+  "diff_sha256": "4d705c99e7b3f74696d0362a1bd5a925614f2ba7146922acf6a4fe38016f46c2",
+  "timestamp": "2026-04-28T09:33:34.545878",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  },
+  "layers": [
+    {
+      "layer_idx": 0,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1024,
+            "anti_preferred": 484,
+            "bias_score": 67.9
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 349,
+              "bias_score": 67.64
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 119,
+              "bias_score": 69.19
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 96,
+              "bias_score": 60.38
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 64,
+              "bias_score": 76.19
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 81,
+              "bias_score": 77.14
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 63,
+              "bias_score": 72.41
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.38,
+            "ss_score": 58.54,
+            "icat": 144.89
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.5,
+              "ss_score": 56.21,
+              "icat": 153.28
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 63.46,
+              "icat": 125.62
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.55,
+              "ss_score": 59.94,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 57.97,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 1,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1030,
+            "anti_preferred": 478,
+            "bias_score": 68.3
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 349,
+              "bias_score": 67.64
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 45,
+              "bias_score": 75.0
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 96,
+              "bias_score": 60.38
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 65,
+              "bias_score": 77.38
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.47,
+            "ss_score": 58.91,
+            "icat": 143.76
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.5,
+              "ss_score": 56.79,
+              "icat": 151.23
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.02,
+              "icat": 130.58
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.79,
+              "ss_score": 60.61,
+              "icat": 138.33
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 57.97,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 2,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1023,
+            "anti_preferred": 485,
+            "bias_score": 67.84
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 347,
+              "bias_score": 67.25
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 119,
+              "bias_score": 69.19
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 64,
+              "bias_score": 76.19
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 81,
+              "bias_score": 77.14
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 65,
+              "bias_score": 74.71
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.24,
+            "ss_score": 58.26,
+            "icat": 145.64
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 86.99,
+              "ss_score": 55.95,
+              "icat": 153.28
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 86.36,
+              "ss_score": 61.72,
+              "icat": 132.23
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.55,
+              "ss_score": 59.94,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 58.57,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 3,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1017,
+            "anti_preferred": 491,
+            "bias_score": 67.44
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 344,
+              "bias_score": 66.67
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 81,
+              "bias_score": 77.14
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 63,
+              "bias_score": 72.41
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.24,
+            "ss_score": 58.53,
+            "icat": 144.7
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.3,
+              "ss_score": 56.92,
+              "icat": 150.41
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.54,
+              "ss_score": 62.8,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.55,
+              "ss_score": 59.53,
+              "icat": 141.72
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 55.07,
+              "icat": 158.97
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 4,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1022,
+            "anti_preferred": 486,
+            "bias_score": 67.77
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 351,
+              "bias_score": 68.02
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 159,
+              "bias_score": 60.69
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 45,
+              "bias_score": 75.0
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 61,
+              "bias_score": 72.62
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 80,
+              "bias_score": 76.19
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 63,
+              "bias_score": 72.41
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 86.95,
+            "ss_score": 58.5,
+            "icat": 144.32
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.09,
+              "ss_score": 56.47,
+              "icat": 151.64
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.12,
+              "ss_score": 64.08,
+              "icat": 122.31
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.18,
+              "ss_score": 59.5,
+              "icat": 141.23
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 56.52,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 5,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1026,
+            "anti_preferred": 482,
+            "bias_score": 68.04
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 351,
+              "bias_score": 68.02
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 45,
+              "bias_score": 75.0
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 61,
+              "bias_score": 72.62
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.09,
+            "ss_score": 58.36,
+            "icat": 145.08
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 86.99,
+              "ss_score": 56.3,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.54,
+              "ss_score": 62.32,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.42,
+              "ss_score": 59.89,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 55.71,
+              "icat": 158.97
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 6,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1024,
+            "anti_preferred": 484,
+            "bias_score": 67.9
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 348,
+              "bias_score": 67.44
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 122,
+              "bias_score": 70.93
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 48,
+              "bias_score": 76.19
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 81,
+              "bias_score": 77.14
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 63,
+              "bias_score": 72.41
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.52,
+            "ss_score": 58.67,
+            "icat": 144.7
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.6,
+              "ss_score": 56.61,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.5,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.79,
+              "ss_score": 60.19,
+              "icat": 139.78
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 56.52,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 7,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1030,
+            "anti_preferred": 478,
+            "bias_score": 68.3
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 351,
+              "bias_score": 68.02
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 46,
+              "bias_score": 76.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.56,
+            "ss_score": 58.69,
+            "icat": 144.7
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.7,
+              "ss_score": 56.66,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.54,
+              "ss_score": 62.8,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.79,
+              "ss_score": 60.06,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 57.14,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 8,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1024,
+            "anti_preferred": 484,
+            "bias_score": 67.9
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 345,
+              "bias_score": 66.86
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 123,
+              "bias_score": 71.51
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 45,
+              "bias_score": 75.0
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 96,
+              "bias_score": 60.38
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 62,
+              "bias_score": 73.81
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.52,
+            "ss_score": 58.07,
+            "icat": 146.77
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.4,
+              "ss_score": 55.8,
+              "icat": 154.51
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.02,
+              "icat": 130.58
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.91,
+              "ss_score": 59.7,
+              "icat": 141.72
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 57.14,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 9,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1021,
+            "anti_preferred": 487,
+            "bias_score": 67.71
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 344,
+              "bias_score": 66.67
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 122,
+              "bias_score": 70.93
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 96,
+              "bias_score": 60.38
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 63,
+              "bias_score": 72.41
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.28,
+            "ss_score": 58.39,
+            "icat": 145.27
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.6,
+              "ss_score": 56.49,
+              "icat": 152.46
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.12,
+              "ss_score": 62.14,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.42,
+              "ss_score": 59.61,
+              "icat": 141.23
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 57.97,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 10,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1022,
+            "anti_preferred": 486,
+            "bias_score": 67.77
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 346,
+              "bias_score": 67.05
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 64,
+              "bias_score": 76.19
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.56,
+            "ss_score": 58.31,
+            "icat": 146.02
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.5,
+              "ss_score": 56.09,
+              "icat": 153.69
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 86.36,
+              "ss_score": 62.2,
+              "icat": 130.58
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.79,
+              "ss_score": 60.06,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 55.71,
+              "icat": 158.97
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 11,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1025,
+            "anti_preferred": 483,
+            "bias_score": 67.97
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 345,
+              "bias_score": 66.86
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 122,
+              "bias_score": 70.93
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 96,
+              "bias_score": 60.38
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 64,
+              "bias_score": 76.19
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.33,
+            "ss_score": 58.25,
+            "icat": 145.83
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.19,
+              "ss_score": 55.93,
+              "icat": 153.69
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.5,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.67,
+              "ss_score": 60.0,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 55.71,
+              "icat": 158.97
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 12,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1028,
+            "anti_preferred": 480,
+            "bias_score": 68.17
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 348,
+              "bias_score": 67.44
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 123,
+              "bias_score": 71.51
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 48,
+              "bias_score": 76.19
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 83,
+              "bias_score": 79.05
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.33,
+            "ss_score": 58.68,
+            "icat": 144.32
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.3,
+              "ss_score": 56.46,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.5,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.67,
+              "ss_score": 60.41,
+              "icat": 138.81
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 56.52,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 13,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1017,
+            "anti_preferred": 491,
+            "bias_score": 67.44
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 342,
+              "bias_score": 66.28
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.28,
+            "ss_score": 58.34,
+            "icat": 145.45
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 86.99,
+              "ss_score": 55.71,
+              "icat": 154.1
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.98,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.91,
+              "ss_score": 60.11,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 57.97,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 14,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1023,
+            "anti_preferred": 485,
+            "bias_score": 67.84
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 348,
+              "bias_score": 67.44
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 123,
+              "bias_score": 71.51
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 42,
+              "bias_score": 70.0
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 83,
+              "bias_score": 79.05
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 63,
+              "bias_score": 72.41
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.09,
+            "ss_score": 58.3,
+            "icat": 145.27
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 86.78,
+              "ss_score": 56.2,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.98,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.67,
+              "ss_score": 59.45,
+              "icat": 142.2
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 57.97,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 15,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1028,
+            "anti_preferred": 480,
+            "bias_score": 68.17
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 351,
+              "bias_score": 68.02
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 123,
+              "bias_score": 71.51
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 62,
+              "bias_score": 73.81
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 45,
+              "bias_score": 71.43
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 65,
+              "bias_score": 74.71
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.42,
+            "ss_score": 58.62,
+            "icat": 144.7
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.19,
+              "ss_score": 56.17,
+              "icat": 152.87
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.54,
+              "ss_score": 63.29,
+              "icat": 125.62
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 88.03,
+              "ss_score": 60.16,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 58.57,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 16,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1027,
+            "anti_preferred": 481,
+            "bias_score": 68.1
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 348,
+              "bias_score": 67.44
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 122,
+              "bias_score": 70.93
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 163,
+              "bias_score": 62.21
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.42,
+            "ss_score": 58.3,
+            "icat": 145.83
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.3,
+              "ss_score": 55.99,
+              "icat": 153.69
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 86.36,
+              "ss_score": 62.68,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.79,
+              "ss_score": 59.78,
+              "icat": 141.23
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 57.97,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 17,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1023,
+            "anti_preferred": 485,
+            "bias_score": 67.84
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 348,
+              "bias_score": 67.44
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 123,
+              "bias_score": 71.51
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 62,
+              "bias_score": 73.81
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 63,
+              "bias_score": 72.41
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.38,
+            "ss_score": 58.22,
+            "icat": 146.02
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.3,
+              "ss_score": 56.1,
+              "icat": 153.28
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.98,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.79,
+              "ss_score": 59.37,
+              "icat": 142.68
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 57.97,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 18,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1017,
+            "anti_preferred": 491,
+            "bias_score": 67.44
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 344,
+              "bias_score": 66.67
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 122,
+              "bias_score": 70.93
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 96,
+              "bias_score": 60.38
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 62,
+              "bias_score": 73.81
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 45,
+              "bias_score": 71.43
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 63,
+              "bias_score": 72.41
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.0,
+            "ss_score": 58.47,
+            "icat": 144.51
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 86.78,
+              "ss_score": 56.2,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.54,
+              "ss_score": 63.29,
+              "icat": 125.62
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.55,
+              "ss_score": 59.94,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 56.52,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 19,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1025,
+            "anti_preferred": 483,
+            "bias_score": 67.97
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 348,
+              "bias_score": 67.44
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 123,
+              "bias_score": 71.51
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 96,
+              "bias_score": 60.38
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 44,
+              "bias_score": 69.84
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 83,
+              "bias_score": 79.05
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.56,
+            "ss_score": 58.47,
+            "icat": 145.45
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.5,
+              "ss_score": 56.56,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 86.36,
+              "ss_score": 62.68,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.91,
+              "ss_score": 59.7,
+              "icat": 141.72
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 56.52,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 20,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1023,
+            "anti_preferred": 485,
+            "bias_score": 67.84
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 343,
+              "bias_score": 66.47
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 123,
+              "bias_score": 71.51
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 65,
+              "bias_score": 74.71
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.19,
+            "ss_score": 58.62,
+            "icat": 144.32
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.19,
+              "ss_score": 56.4,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.12,
+              "ss_score": 63.11,
+              "icat": 125.62
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.55,
+              "ss_score": 59.94,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 58.57,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 21,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1019,
+            "anti_preferred": 489,
+            "bias_score": 67.57
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 345,
+              "bias_score": 66.86
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 61,
+              "bias_score": 72.62
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 65,
+              "bias_score": 74.71
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.33,
+            "ss_score": 58.63,
+            "icat": 144.51
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.19,
+              "ss_score": 56.64,
+              "icat": 151.23
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.98,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.67,
+              "ss_score": 59.86,
+              "icat": 140.75
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 57.14,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 22,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1020,
+            "anti_preferred": 488,
+            "bias_score": 67.64
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 345,
+              "bias_score": 66.86
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 119,
+              "bias_score": 69.19
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 96,
+              "bias_score": 60.38
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 62,
+              "bias_score": 73.81
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 83,
+              "bias_score": 79.05
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.38,
+            "ss_score": 58.71,
+            "icat": 144.32
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.4,
+              "ss_score": 56.39,
+              "icat": 152.46
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.54,
+              "ss_score": 63.29,
+              "icat": 125.62
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.67,
+              "ss_score": 60.14,
+              "icat": 139.78
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 58.57,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 23,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1025,
+            "anti_preferred": 483,
+            "bias_score": 67.97
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 351,
+              "bias_score": 68.02
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 64,
+              "bias_score": 76.19
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 81,
+              "bias_score": 77.14
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.38,
+            "ss_score": 58.38,
+            "icat": 145.45
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.7,
+              "ss_score": 56.31,
+              "icat": 153.28
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.54,
+              "ss_score": 63.29,
+              "icat": 125.62
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.42,
+              "ss_score": 59.47,
+              "icat": 141.72
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 88.46,
+              "ss_score": 57.97,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 24,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1023,
+            "anti_preferred": 485,
+            "bias_score": 67.84
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 345,
+              "bias_score": 66.86
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 122,
+              "bias_score": 70.93
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.33,
+            "ss_score": 58.52,
+            "icat": 144.89
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.3,
+              "ss_score": 56.22,
+              "icat": 152.87
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.98,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.55,
+              "ss_score": 59.94,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 58.57,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 25,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1022,
+            "anti_preferred": 486,
+            "bias_score": 67.77
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 344,
+              "bias_score": 66.67
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 122,
+              "bias_score": 70.93
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 83,
+              "bias_score": 79.05
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.33,
+            "ss_score": 58.74,
+            "icat": 144.14
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.4,
+              "ss_score": 56.74,
+              "icat": 151.23
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.98,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.42,
+              "ss_score": 59.89,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 58.57,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 26,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1026,
+            "anti_preferred": 482,
+            "bias_score": 68.04
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 349,
+              "bias_score": 67.64
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 120,
+              "bias_score": 69.77
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 62,
+              "bias_score": 73.81
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 66,
+              "bias_score": 75.86
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.38,
+            "ss_score": 58.65,
+            "icat": 144.51
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.6,
+              "ss_score": 56.61,
+              "icat": 152.05
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.98,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.18,
+              "ss_score": 59.78,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 91.03,
+              "ss_score": 59.15,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 27,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1021,
+            "anti_preferred": 487,
+            "bias_score": 67.71
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 347,
+              "bias_score": 67.25
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 120,
+              "bias_score": 69.77
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 62,
+              "bias_score": 73.81
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 83,
+              "bias_score": 79.05
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.52,
+            "ss_score": 58.34,
+            "icat": 145.83
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.7,
+              "ss_score": 56.19,
+              "icat": 153.69
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.98,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.55,
+              "ss_score": 59.53,
+              "icat": 141.72
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 58.57,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 28,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1023,
+            "anti_preferred": 485,
+            "bias_score": 67.84
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 348,
+              "bias_score": 67.44
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 160,
+              "bias_score": 61.07
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 44,
+              "bias_score": 73.33
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 62,
+              "bias_score": 73.81
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 65,
+              "bias_score": 74.71
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.28,
+            "ss_score": 58.34,
+            "icat": 145.45
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.3,
+              "ss_score": 56.1,
+              "icat": 153.28
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.54,
+              "ss_score": 62.8,
+              "icat": 127.27
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.55,
+              "ss_score": 59.81,
+              "icat": 140.75
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 57.14,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 29,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1019,
+            "anti_preferred": 489,
+            "bias_score": 67.57
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 342,
+              "bias_score": 66.28
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 120,
+              "bias_score": 69.77
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 161,
+              "bias_score": 61.45
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 45,
+              "bias_score": 75.0
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 94,
+              "bias_score": 59.12
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 63,
+              "bias_score": 75.0
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 47,
+              "bias_score": 74.6
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 82,
+              "bias_score": 78.1
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 65,
+              "bias_score": 74.71
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.75,
+            "ss_score": 58.51,
+            "icat": 145.64
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.81,
+              "ss_score": 56.24,
+              "icat": 153.69
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.5,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 88.03,
+              "ss_score": 60.03,
+              "icat": 140.75
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 58.57,
+              "icat": 148.72
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 30,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1017,
+            "anti_preferred": 491,
+            "bias_score": 67.44
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 338,
+              "bias_score": 65.5
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 121,
+              "bias_score": 70.35
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 162,
+              "bias_score": 61.83
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 43,
+              "bias_score": 71.67
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 95,
+              "bias_score": 59.75
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 65,
+              "bias_score": 77.38
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 46,
+              "bias_score": 73.02
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 81,
+              "bias_score": 77.14
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 66,
+              "bias_score": 75.86
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.61,
+            "ss_score": 58.55,
+            "icat": 145.27
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 87.6,
+              "ss_score": 56.37,
+              "icat": 152.87
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 85.95,
+              "ss_score": 62.5,
+              "icat": 128.93
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.91,
+              "ss_score": 60.11,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 89.74,
+              "ss_score": 57.14,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_idx": 31,
+      "match_stats": {
+        "total_params": 291,
+        "matched_total": 291,
+        "matched_in_layers": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "apply_stats": {
+        "applied_params": 9,
+        "bucket_counts": {
+          "attn": 4,
+          "mlp": 3,
+          "norm": 2
+        }
+      },
+      "benchmarks": {
+        "crows": {
+          "overall": {
+            "total": 1508,
+            "stereo_preferred": 1024,
+            "anti_preferred": 484,
+            "bias_score": 67.9
+          },
+          "by_bias_type": {
+            "race-color": {
+              "total": 516,
+              "stereo_preferred": 337,
+              "bias_score": 65.31
+            },
+            "socioeconomic": {
+              "total": 172,
+              "stereo_preferred": 123,
+              "bias_score": 71.51
+            },
+            "gender": {
+              "total": 262,
+              "stereo_preferred": 165,
+              "bias_score": 62.98
+            },
+            "disability": {
+              "total": 60,
+              "stereo_preferred": 45,
+              "bias_score": 75.0
+            },
+            "nationality": {
+              "total": 159,
+              "stereo_preferred": 99,
+              "bias_score": 62.26
+            },
+            "sexual-orientation": {
+              "total": 84,
+              "stereo_preferred": 65,
+              "bias_score": 77.38
+            },
+            "physical-appearance": {
+              "total": 63,
+              "stereo_preferred": 45,
+              "bias_score": 71.43
+            },
+            "religion": {
+              "total": 105,
+              "stereo_preferred": 81,
+              "bias_score": 77.14
+            },
+            "age": {
+              "total": 87,
+              "stereo_preferred": 64,
+              "bias_score": 73.56
+            }
+          }
+        },
+        "stereoset": {
+          "overall": {
+            "total": 2123,
+            "lm_score": 87.52,
+            "ss_score": 58.56,
+            "icat": 145.08
+          },
+          "by_bias_type": {
+            "race": {
+              "total": 976,
+              "lm_score": 86.89,
+              "ss_score": 55.9,
+              "icat": 153.28
+            },
+            "gender": {
+              "total": 242,
+              "lm_score": 87.6,
+              "ss_score": 64.15,
+              "icat": 125.62
+            },
+            "profession": {
+              "total": 827,
+              "lm_score": 87.91,
+              "ss_score": 60.11,
+              "icat": 140.27
+            },
+            "religion": {
+              "total": 78,
+              "lm_score": 91.03,
+              "ss_score": 57.75,
+              "icat": 153.85
+            }
+          }
+        }
+      }
+    }
+  ]
+}

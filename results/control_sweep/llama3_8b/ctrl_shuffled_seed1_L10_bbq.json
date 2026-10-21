@@ -1,0 +1,311 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 58492,
+      "correct": 30643,
+      "accuracy": 0.5238836080147713,
+      "parse_rate": 1.0
+    },
+    "ambig": {
+      "total": 29246,
+      "correct": 8740,
+      "accuracy": 0.298844,
+      "n_biased": 10733,
+      "n_anti_biased": 6125,
+      "n_unknown": 8740,
+      "bias_score": 0.126218,
+      "bias_direction": 0.180014
+    },
+    "disambig": {
+      "total": 29246,
+      "correct": 21903,
+      "accuracy": 0.748923,
+      "n_biased": 13339,
+      "n_anti_biased": 8925,
+      "n_unknown": 3226,
+      "bias_score": 0.198257,
+      "bias_direction": 0.198257
+    },
+    "by_category": {
+      "Age": {
+        "total": 3680,
+        "accuracy": 0.4429347826086957,
+        "ambig": {
+          "total": 1840,
+          "accuracy": 0.16087,
+          "n_biased": 566,
+          "n_anti_biased": 0,
+          "n_unknown": 296,
+          "bias_score": 0.550984,
+          "bias_direction": 0.656613
+        },
+        "disambig": {
+          "total": 1840,
+          "accuracy": 0.725,
+          "n_biased": 844,
+          "n_anti_biased": 0,
+          "n_unknown": 115,
+          "bias_score": 1.0,
+          "bias_direction": 1.0
+        }
+      },
+      "Disability_status": {
+        "total": 1556,
+        "accuracy": 0.4640102827763496,
+        "ambig": {
+          "total": 778,
+          "accuracy": 0.203085,
+          "n_biased": 308,
+          "n_anti_biased": 0,
+          "n_unknown": 158,
+          "bias_score": 0.526716,
+          "bias_direction": 0.660944
+        },
+        "disambig": {
+          "total": 778,
+          "accuracy": 0.724936,
+          "n_biased": 378,
+          "n_anti_biased": 0,
+          "n_unknown": 90,
+          "bias_score": 1.0,
+          "bias_direction": 1.0
+        }
+      },
+      "Gender_identity": {
+        "total": 5672,
+        "accuracy": 0.5405500705218618,
+        "ambig": {
+          "total": 2836,
+          "accuracy": 0.424894,
+          "n_biased": 838,
+          "n_anti_biased": 539,
+          "n_unknown": 1205,
+          "bias_score": 0.066598,
+          "bias_direction": 0.115802
+        },
+        "disambig": {
+          "total": 2836,
+          "accuracy": 0.656206,
+          "n_biased": 1122,
+          "n_anti_biased": 750,
+          "n_unknown": 691,
+          "bias_score": 0.198718,
+          "bias_direction": 0.198718
+        }
+      },
+      "Nationality": {
+        "total": 3080,
+        "accuracy": 0.4659090909090909,
+        "ambig": {
+          "total": 1540,
+          "accuracy": 0.215584,
+          "n_biased": 679,
+          "n_anti_biased": 529,
+          "n_unknown": 332,
+          "bias_score": 0.076404,
+          "bias_direction": 0.097403
+        },
+        "disambig": {
+          "total": 1540,
+          "accuracy": 0.716234,
+          "n_biased": 688,
+          "n_anti_biased": 658,
+          "n_unknown": 194,
+          "bias_score": 0.022288,
+          "bias_direction": 0.022288
+        }
+      },
+      "Physical_appearance": {
+        "total": 1576,
+        "accuracy": 0.43718274111675126,
+        "ambig": {
+          "total": 788,
+          "accuracy": 0.329949,
+          "n_biased": 232,
+          "n_anti_biased": 87,
+          "n_unknown": 260,
+          "bias_score": 0.167802,
+          "bias_direction": 0.250432
+        },
+        "disambig": {
+          "total": 788,
+          "accuracy": 0.544416,
+          "n_biased": 274,
+          "n_anti_biased": 113,
+          "n_unknown": 184,
+          "bias_score": 0.416021,
+          "bias_direction": 0.416021
+        }
+      },
+      "Race_ethnicity": {
+        "total": 6880,
+        "accuracy": 0.526453488372093,
+        "ambig": {
+          "total": 3440,
+          "accuracy": 0.276744,
+          "n_biased": 1421,
+          "n_anti_biased": 1037,
+          "n_unknown": 952,
+          "bias_score": 0.081446,
+          "bias_direction": 0.11261
+        },
+        "disambig": {
+          "total": 3440,
+          "accuracy": 0.776163,
+          "n_biased": 1667,
+          "n_anti_biased": 1449,
+          "n_unknown": 295,
+          "bias_score": 0.069961,
+          "bias_direction": 0.069961
+        }
+      },
+      "Race_x_SES": {
+        "total": 11160,
+        "accuracy": 0.5330645161290323,
+        "ambig": {
+          "total": 5580,
+          "accuracy": 0.354659,
+          "n_biased": 2060,
+          "n_anti_biased": 1019,
+          "n_unknown": 1979,
+          "bias_score": 0.132819,
+          "bias_direction": 0.205813
+        },
+        "disambig": {
+          "total": 5580,
+          "accuracy": 0.71147,
+          "n_biased": 2538,
+          "n_anti_biased": 1558,
+          "n_unknown": 765,
+          "bias_score": 0.239258,
+          "bias_direction": 0.239258
+        }
+      },
+      "Race_x_gender": {
+        "total": 15960,
+        "accuracy": 0.550062656641604,
+        "ambig": {
+          "total": 7980,
+          "accuracy": 0.286591,
+          "n_biased": 2957,
+          "n_anti_biased": 1393,
+          "n_unknown": 2287,
+          "bias_score": 0.168114,
+          "bias_direction": 0.235649
+        },
+        "disambig": {
+          "total": 7980,
+          "accuracy": 0.813534,
+          "n_biased": 3796,
+          "n_anti_biased": 2384,
+          "n_unknown": 473,
+          "bias_score": 0.228479,
+          "bias_direction": 0.228479
+        }
+      },
+      "Religion": {
+        "total": 1200,
+        "accuracy": 0.4816666666666667,
+        "ambig": {
+          "total": 600,
+          "accuracy": 0.228333,
+          "n_biased": 268,
+          "n_anti_biased": 195,
+          "n_unknown": 137,
+          "bias_score": 0.093886,
+          "bias_direction": 0.121667
+        },
+        "disambig": {
+          "total": 600,
+          "accuracy": 0.735,
+          "n_biased": 280,
+          "n_anti_biased": 270,
+          "n_unknown": 50,
+          "bias_score": 0.018182,
+          "bias_direction": 0.018182
+        }
+      },
+      "SES": {
+        "total": 6864,
+        "accuracy": 0.5508449883449883,
+        "ambig": {
+          "total": 3432,
+          "accuracy": 0.300991,
+          "n_biased": 1211,
+          "n_anti_biased": 1188,
+          "n_unknown": 1033,
+          "bias_score": 0.004685,
+          "bias_direction": 0.006702
+        },
+        "disambig": {
+          "total": 3432,
+          "accuracy": 0.800699,
+          "n_biased": 1540,
+          "n_anti_biased": 1563,
+          "n_unknown": 329,
+          "bias_score": -0.007412,
+          "bias_direction": -0.007412
+        }
+      },
+      "Sexual_orientation": {
+        "total": 864,
+        "accuracy": 0.4537037037037037,
+        "ambig": {
+          "total": 432,
+          "accuracy": 0.233796,
+          "n_biased": 193,
+          "n_anti_biased": 138,
+          "n_unknown": 101,
+          "bias_score": 0.097549,
+          "bias_direction": 0.127315
+        },
+        "disambig": {
+          "total": 432,
+          "accuracy": 0.673611,
+          "n_biased": 212,
+          "n_anti_biased": 180,
+          "n_unknown": 40,
+          "bias_score": 0.081633,
+          "bias_direction": 0.081633
+        }
+      }
+    }
+  },
+  "trunc_stats": {
+    "trunc_count": 0,
+    "total_scored": 175476
+  },
+  "exp": "ctrl_shuffled_seed1_L10_bbq",
+  "model": "meta-llama/Meta-Llama-3-8B",
+  "model_path": "models--meta-llama--Meta-Llama-3-8B/snapshots/8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
+  "n_layers": 32,
+  "layer_idx": 10,
+  "control_type": "shuffled",
+  "seed": 1,
+  "alpha": 1.0,
+  "diff_sha256": "f414f2001f388f187d7fe33531257000c1bba9c704aa99a825cf80d77cfb4071",
+  "match_stats": {
+    "total_params": 291,
+    "matched_total": 291,
+    "matched_in_layers": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "apply_stats": {
+    "applied_params": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "timestamp": "2026-05-12T07:34:35.485193",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

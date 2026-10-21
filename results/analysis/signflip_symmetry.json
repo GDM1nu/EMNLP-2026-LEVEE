@@ -1,0 +1,86 @@
+[
+  {
+    "model": "gemma_2b",
+    "alignment": "RLHF(SFT+PPO)",
+    "baseline": 0.1605,
+    "best_layer": 11,
+    "sweep_best": 0.125,
+    "signflip_at_best": 0.1629,
+    "delta_plus": 0.0355,
+    "delta_minus": 0.0024,
+    "symmetry_score": 0.9315,
+    "verdict": "anomaly"
+  },
+  {
+    "model": "gemma_9b",
+    "alignment": "RLHF(SFT+PPO)",
+    "baseline": 0.1163,
+    "best_layer": 20,
+    "sweep_best": 0.0852,
+    "signflip_at_best": 0.1298,
+    "delta_plus": 0.0311,
+    "delta_minus": 0.0135,
+    "symmetry_score": 0.5644,
+    "verdict": "asymmetric"
+  },
+  {
+    "model": "llama32_1b",
+    "alignment": "SFT+PPO+DPO",
+    "baseline": 0.2508,
+    "best_layer": 9,
+    "sweep_best": 0.2014,
+    "signflip_at_best": 0.2437,
+    "delta_plus": 0.0494,
+    "delta_minus": -0.0071,
+    "symmetry_score": 1.1438,
+    "verdict": "anomaly(-\u0394W also suppresses)"
+  },
+  {
+    "model": "llama32_3b",
+    "alignment": "SFT+PPO+DPO",
+    "baseline": 0.1762,
+    "best_layer": 10,
+    "sweep_best": 0.093,
+    "signflip_at_best": 0.1819,
+    "delta_plus": 0.0831,
+    "delta_minus": 0.0058,
+    "symmetry_score": 0.9304,
+    "verdict": "anomaly"
+  },
+  {
+    "model": "llama3_8b",
+    "alignment": "SFT+PPO+DPO",
+    "baseline": 0.1274,
+    "best_layer": 16,
+    "sweep_best": 0.038,
+    "signflip_at_best": 0.0293,
+    "delta_plus": 0.0894,
+    "delta_minus": -0.0981,
+    "symmetry_score": 1.9117,
+    "verdict": "anomaly(-\u0394W also suppresses)"
+  },
+  {
+    "model": "qwen_14b",
+    "alignment": "DPO/GRPO",
+    "baseline": 0.013,
+    "best_layer": 21,
+    "sweep_best": 0.0036,
+    "signflip_at_best": 0.0385,
+    "delta_plus": 0.0094,
+    "delta_minus": 0.0255,
+    "symmetry_score": 0.6312,
+    "verdict": "asymmetric"
+  },
+  {
+    "model": "qwen_3b",
+    "alignment": "DPO/GRPO",
+    "baseline": 0.0517,
+    "best_layer": 18,
+    "sweep_best": 0.0277,
+    "signflip_at_best": 0.0837,
+    "delta_plus": 0.024,
+    "delta_minus": 0.032,
+    "symmetry_score": 0.2479,
+    "verdict": "symmetric"
+  }
+]

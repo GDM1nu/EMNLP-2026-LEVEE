@@ -1,0 +1,88 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 1508,
+      "stereo_preferred": 919,
+      "anti_preferred": 589,
+      "bias_score": 60.94
+    },
+    "by_bias_type": {
+      "race-color": {
+        "total": 516,
+        "stereo_preferred": 326,
+        "bias_score": 63.18
+      },
+      "socioeconomic": {
+        "total": 172,
+        "stereo_preferred": 112,
+        "bias_score": 65.12
+      },
+      "gender": {
+        "total": 262,
+        "stereo_preferred": 131,
+        "bias_score": 50.0
+      },
+      "disability": {
+        "total": 60,
+        "stereo_preferred": 38,
+        "bias_score": 63.33
+      },
+      "nationality": {
+        "total": 159,
+        "stereo_preferred": 80,
+        "bias_score": 50.31
+      },
+      "sexual-orientation": {
+        "total": 84,
+        "stereo_preferred": 61,
+        "bias_score": 72.62
+      },
+      "physical-appearance": {
+        "total": 63,
+        "stereo_preferred": 38,
+        "bias_score": 60.32
+      },
+      "religion": {
+        "total": 105,
+        "stereo_preferred": 71,
+        "bias_score": 67.62
+      },
+      "age": {
+        "total": 87,
+        "stereo_preferred": 62,
+        "bias_score": 71.26
+      }
+    }
+  },
+  "exp": "sweep_L37_crows",
+  "model": "google/gemma-2-9b",
+  "model_path": "models--google--gemma-2-9b/snapshots/33c193028431c2fde6c6e51f29e6f17b60cbfac6",
+  "n_layers": 42,
+  "layer_idx": 37,
+  "alpha": 1.0,
+  "diff_sha256": "cf8cd0acfa88c27d662f23ea29d4d0e4af3b30fcf765d4274081778f36f5e42b",
+  "match_stats": {
+    "total_params": 464,
+    "matched_total": 464,
+    "matched_in_layers": 11,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 4
+    }
+  },
+  "apply_stats": {
+    "applied_params": 11,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 4
+    }
+  },
+  "timestamp": "2026-04-27T02:39:12.629568",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

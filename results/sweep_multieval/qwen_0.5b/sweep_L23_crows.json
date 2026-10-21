@@ -1,0 +1,88 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 1508,
+      "stereo_preferred": 878,
+      "anti_preferred": 630,
+      "bias_score": 58.22
+    },
+    "by_bias_type": {
+      "race-color": {
+        "total": 516,
+        "stereo_preferred": 296,
+        "bias_score": 57.36
+      },
+      "socioeconomic": {
+        "total": 172,
+        "stereo_preferred": 116,
+        "bias_score": 67.44
+      },
+      "gender": {
+        "total": 262,
+        "stereo_preferred": 145,
+        "bias_score": 55.34
+      },
+      "disability": {
+        "total": 60,
+        "stereo_preferred": 45,
+        "bias_score": 75.0
+      },
+      "nationality": {
+        "total": 159,
+        "stereo_preferred": 77,
+        "bias_score": 48.43
+      },
+      "sexual-orientation": {
+        "total": 84,
+        "stereo_preferred": 53,
+        "bias_score": 63.1
+      },
+      "physical-appearance": {
+        "total": 63,
+        "stereo_preferred": 38,
+        "bias_score": 60.32
+      },
+      "religion": {
+        "total": 105,
+        "stereo_preferred": 60,
+        "bias_score": 57.14
+      },
+      "age": {
+        "total": 87,
+        "stereo_preferred": 48,
+        "bias_score": 55.17
+      }
+    }
+  },
+  "exp": "sweep_L23_crows",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_path": "models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "n_layers": 24,
+  "layer_idx": 23,
+  "alpha": 1.0,
+  "diff_sha256": "e2e3f868cac0c5cad78bbe6f158643eb3d69b9b2424dade087580426a1f0704b",
+  "match_stats": {
+    "total_params": 290,
+    "matched_total": 290,
+    "matched_in_layers": 12,
+    "bucket_counts": {
+      "attn": 7,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "apply_stats": {
+    "applied_params": 12,
+    "bucket_counts": {
+      "attn": 7,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "timestamp": "2026-04-27T07:48:27.205224",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

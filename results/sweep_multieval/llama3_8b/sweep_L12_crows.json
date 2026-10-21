@@ -1,0 +1,88 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 1508,
+      "stereo_preferred": 1024,
+      "anti_preferred": 484,
+      "bias_score": 67.9
+    },
+    "by_bias_type": {
+      "race-color": {
+        "total": 516,
+        "stereo_preferred": 341,
+        "bias_score": 66.09
+      },
+      "socioeconomic": {
+        "total": 172,
+        "stereo_preferred": 121,
+        "bias_score": 70.35
+      },
+      "gender": {
+        "total": 262,
+        "stereo_preferred": 170,
+        "bias_score": 64.89
+      },
+      "disability": {
+        "total": 60,
+        "stereo_preferred": 45,
+        "bias_score": 75.0
+      },
+      "nationality": {
+        "total": 159,
+        "stereo_preferred": 94,
+        "bias_score": 59.12
+      },
+      "sexual-orientation": {
+        "total": 84,
+        "stereo_preferred": 64,
+        "bias_score": 76.19
+      },
+      "physical-appearance": {
+        "total": 63,
+        "stereo_preferred": 49,
+        "bias_score": 77.78
+      },
+      "religion": {
+        "total": 105,
+        "stereo_preferred": 79,
+        "bias_score": 75.24
+      },
+      "age": {
+        "total": 87,
+        "stereo_preferred": 61,
+        "bias_score": 70.11
+      }
+    }
+  },
+  "exp": "sweep_L12_crows",
+  "model": "meta-llama/Meta-Llama-3-8B",
+  "model_path": "models--meta-llama--Meta-Llama-3-8B/snapshots/8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
+  "n_layers": 32,
+  "layer_idx": 12,
+  "alpha": 1.0,
+  "diff_sha256": "f414f2001f388f187d7fe33531257000c1bba9c704aa99a825cf80d77cfb4071",
+  "match_stats": {
+    "total_params": 291,
+    "matched_total": 291,
+    "matched_in_layers": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "apply_stats": {
+    "applied_params": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "timestamp": "2026-04-27T02:54:20.159634",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

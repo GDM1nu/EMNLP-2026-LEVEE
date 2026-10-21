@@ -1,0 +1,82 @@
+{
+  "exp": "block_full_mmlu",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "n_layers": 24,
+  "condition": "full",
+  "layers_injected": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "layers_excluded": [],
+  "alpha": 1.0,
+  "mmlu_tasks": [
+    "mmlu_abstract_algebra",
+    "mmlu_high_school_mathematics",
+    "mmlu_high_school_physics",
+    "mmlu_high_school_computer_science",
+    "mmlu_philosophy",
+    "mmlu_high_school_world_history",
+    "mmlu_moral_scenarios",
+    "mmlu_sociology",
+    "mmlu_high_school_psychology",
+    "mmlu_high_school_government_and_politics",
+    "mmlu_high_school_statistics",
+    "mmlu_professional_law",
+    "mmlu_medical_genetics",
+    "mmlu_global_facts"
+  ],
+  "diff_sha256": "e2e3f868cac0c5cad78bbe6f158643eb3d69b9b2424dade087580426a1f0704b",
+  "mmlu_acc": 0.43661945619664616,
+  "subtask_scores": {
+    "mmlu_abstract_algebra": 0.31,
+    "mmlu_global_facts": 0.34,
+    "mmlu_high_school_computer_science": 0.46,
+    "mmlu_high_school_government_and_politics": 0.533678756476684,
+    "mmlu_high_school_mathematics": 0.3296296296296296,
+    "mmlu_high_school_physics": 0.2847682119205298,
+    "mmlu_high_school_psychology": 0.6311926605504588,
+    "mmlu_high_school_statistics": 0.33796296296296297,
+    "mmlu_high_school_world_history": 0.5949367088607594,
+    "mmlu_medical_genetics": 0.52,
+    "mmlu_moral_scenarios": 0.23910614525139665,
+    "mmlu_philosophy": 0.49517684887459806,
+    "mmlu_professional_law": 0.3546284224250326,
+    "mmlu_sociology": 0.681592039800995
+  },
+  "apply_stats": {
+    "applied_params": 288,
+    "bucket_counts": {
+      "attn": 168,
+      "mlp": 72,
+      "norm": 48
+    }
+  },
+  "timestamp": "2026-07-08T01:54:03.423270",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

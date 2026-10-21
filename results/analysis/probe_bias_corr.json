@@ -1,0 +1,184 @@
+{
+  "n_models": 1,
+  "probe_label": "correct_answer_3class",
+  "bias_metric": "ambig_bias_score (sweep_thirds, ambig context)",
+  "note": "bias_binary label mode not yet implemented — correct_answer_3class used as proxy (predicts A/B/C, not bias direction directly). Only llama3_8b has probing data as of 2026-05-06.",
+  "results": [
+    {
+      "alias": "llama3_8b",
+      "n_layers": 32,
+      "probe_label": "correct_answer_3class",
+      "bias_metric": "ambig_bias_score",
+      "spearman_r": -0.1361,
+      "spearman_p": 0.4577,
+      "pearson_r": 0.079,
+      "pearson_p": 0.6673,
+      "probe_mean": 0.3387,
+      "probe_std": 0.0315,
+      "bias_mean": 0.1214,
+      "bias_std": 0.0249,
+      "per_layer": [
+        {
+          "layer": 0,
+          "probe_acc": 0.32,
+          "bias_score": 0.1798
+        },
+        {
+          "layer": 1,
+          "probe_acc": 0.3,
+          "bias_score": 0.1261
+        },
+        {
+          "layer": 2,
+          "probe_acc": 0.29,
+          "bias_score": 0.1373
+        },
+        {
+          "layer": 3,
+          "probe_acc": 0.3,
+          "bias_score": 0.1373
+        },
+        {
+          "layer": 4,
+          "probe_acc": 0.29,
+          "bias_score": 0.1167
+        },
+        {
+          "layer": 5,
+          "probe_acc": 0.3,
+          "bias_score": 0.1331
+        },
+        {
+          "layer": 6,
+          "probe_acc": 0.32,
+          "bias_score": 0.1301
+        },
+        {
+          "layer": 7,
+          "probe_acc": 0.33,
+          "bias_score": 0.1216
+        },
+        {
+          "layer": 8,
+          "probe_acc": 0.31,
+          "bias_score": 0.1213
+        },
+        {
+          "layer": 9,
+          "probe_acc": 0.32,
+          "bias_score": 0.0919
+        },
+        {
+          "layer": 10,
+          "probe_acc": 0.31,
+          "bias_score": 0.1344
+        },
+        {
+          "layer": 11,
+          "probe_acc": 0.31,
+          "bias_score": 0.0874
+        },
+        {
+          "layer": 12,
+          "probe_acc": 0.34,
+          "bias_score": 0.1271
+        },
+        {
+          "layer": 13,
+          "probe_acc": 0.33,
+          "bias_score": 0.1346
+        },
+        {
+          "layer": 14,
+          "probe_acc": 0.34,
+          "bias_score": 0.13
+        },
+        {
+          "layer": 15,
+          "probe_acc": 0.33,
+          "bias_score": 0.0507
+        },
+        {
+          "layer": 16,
+          "probe_acc": 0.32,
+          "bias_score": 0.038
+        },
+        {
+          "layer": 17,
+          "probe_acc": 0.32,
+          "bias_score": 0.1348
+        },
+        {
+          "layer": 18,
+          "probe_acc": 0.33,
+          "bias_score": 0.1088
+        },
+        {
+          "layer": 19,
+          "probe_acc": 0.35,
+          "bias_score": 0.1143
+        },
+        {
+          "layer": 20,
+          "probe_acc": 0.33,
+          "bias_score": 0.1322
+        },
+        {
+          "layer": 21,
+          "probe_acc": 0.36,
+          "bias_score": 0.1249
+        },
+        {
+          "layer": 22,
+          "probe_acc": 0.37,
+          "bias_score": 0.1261
+        },
+        {
+          "layer": 23,
+          "probe_acc": 0.38,
+          "bias_score": 0.1216
+        },
+        {
+          "layer": 24,
+          "probe_acc": 0.37,
+          "bias_score": 0.1261
+        },
+        {
+          "layer": 25,
+          "probe_acc": 0.39,
+          "bias_score": 0.1256
+        },
+        {
+          "layer": 26,
+          "probe_acc": 0.39,
+          "bias_score": 0.126
+        },
+        {
+          "layer": 27,
+          "probe_acc": 0.38,
+          "bias_score": 0.126
+        },
+        {
+          "layer": 28,
+          "probe_acc": 0.39,
+          "bias_score": 0.1255
+        },
+        {
+          "layer": 29,
+          "probe_acc": 0.39,
+          "bias_score": 0.1214
+        },
+        {
+          "layer": 30,
+          "probe_acc": 0.36,
+          "bias_score": 0.1286
+        },
+        {
+          "layer": 31,
+          "probe_acc": 0.37,
+          "bias_score": 0.1447
+        }
+      ]
+    }
+  ]
+}

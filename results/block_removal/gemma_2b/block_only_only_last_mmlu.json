@@ -1,0 +1,89 @@
+{
+  "exp": "block_only_only_last_mmlu",
+  "model": "google/gemma-2-2b",
+  "n_layers": 26,
+  "condition": "only_last",
+  "layers_injected": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "layers_excluded": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "n_injected": 9,
+  "alpha": 1.0,
+  "seed": 0,
+  "mmlu_tasks": [
+    "mmlu_abstract_algebra",
+    "mmlu_high_school_mathematics",
+    "mmlu_high_school_physics",
+    "mmlu_high_school_computer_science",
+    "mmlu_philosophy",
+    "mmlu_high_school_world_history",
+    "mmlu_moral_scenarios",
+    "mmlu_sociology",
+    "mmlu_high_school_psychology",
+    "mmlu_high_school_government_and_politics",
+    "mmlu_high_school_statistics",
+    "mmlu_professional_law",
+    "mmlu_medical_genetics",
+    "mmlu_global_facts"
+  ],
+  "n_mmlu_tasks": 14,
+  "diff_sha256": "d99683c36ddb535516ee4184cd0c3a4f29e00ae9e0fe5417d51b2613a1cc6b45",
+  "git_hash": "3ae2dcb",
+  "mmlu_acc": 0.3084886572201554,
+  "subtask_scores": {
+    "mmlu_abstract_algebra": 0.26,
+    "mmlu_global_facts": 0.29,
+    "mmlu_high_school_computer_science": 0.37,
+    "mmlu_high_school_government_and_politics": 0.41450777202072536,
+    "mmlu_high_school_mathematics": 0.21851851851851853,
+    "mmlu_high_school_physics": 0.2913907284768212,
+    "mmlu_high_school_psychology": 0.3504587155963303,
+    "mmlu_high_school_statistics": 0.27314814814814814,
+    "mmlu_high_school_world_history": 0.3459915611814346,
+    "mmlu_medical_genetics": 0.32,
+    "mmlu_moral_scenarios": 0.2536312849162011,
+    "mmlu_philosophy": 0.29260450160771706,
+    "mmlu_professional_law": 0.2953063885267275,
+    "mmlu_sociology": 0.34328358208955223
+  },
+  "apply_stats": {
+    "applied_params": 99,
+    "bucket_counts": {
+      "attn": 36,
+      "mlp": 27,
+      "norm": 36
+    }
+  },
+  "timestamp": "2026-05-07T16:52:26.937871",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

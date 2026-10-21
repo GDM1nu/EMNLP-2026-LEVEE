@@ -1,0 +1,91 @@
+{
+  "exp": "block_only_mid_mmlu",
+  "model": "hub/models--mistralai--Mistral-7B-v0.1/snapshots/27d67f1b5f57dc0953326b2601d68371d40ea8da",
+  "n_layers": 32,
+  "condition": "only_mid",
+  "layers_injected": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "layers_excluded": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "alpha": 1.0,
+  "mmlu_tasks": [
+    "mmlu_abstract_algebra",
+    "mmlu_high_school_mathematics",
+    "mmlu_high_school_physics",
+    "mmlu_high_school_computer_science",
+    "mmlu_philosophy",
+    "mmlu_high_school_world_history",
+    "mmlu_moral_scenarios",
+    "mmlu_sociology",
+    "mmlu_high_school_psychology",
+    "mmlu_high_school_government_and_politics",
+    "mmlu_high_school_statistics",
+    "mmlu_professional_law",
+    "mmlu_medical_genetics",
+    "mmlu_global_facts"
+  ],
+  "diff_sha256": "45ae570f569509b7639298bb286f049e9c82b43a868577144e04dd8775d2576d",
+  "mmlu_acc": 0.5444650381818298,
+  "subtask_scores": {
+    "mmlu_abstract_algebra": 0.31,
+    "mmlu_global_facts": 0.35,
+    "mmlu_high_school_computer_science": 0.63,
+    "mmlu_high_school_government_and_politics": 0.8186528497409327,
+    "mmlu_high_school_mathematics": 0.32592592592592595,
+    "mmlu_high_school_physics": 0.2980132450331126,
+    "mmlu_high_school_psychology": 0.7669724770642202,
+    "mmlu_high_school_statistics": 0.5,
+    "mmlu_high_school_world_history": 0.7426160337552743,
+    "mmlu_medical_genetics": 0.67,
+    "mmlu_moral_scenarios": 0.3094972067039106,
+    "mmlu_philosophy": 0.6720257234726688,
+    "mmlu_professional_law": 0.4178617992177314,
+    "mmlu_sociology": 0.8109452736318408
+  },
+  "apply_stats": {
+    "applied_params": 99,
+    "bucket_counts": {
+      "attn": 44,
+      "mlp": 33,
+      "norm": 22
+    }
+  },
+  "timestamp": "2026-07-11T00:08:56.110128",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

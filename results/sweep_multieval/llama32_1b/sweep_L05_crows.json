@@ -1,0 +1,88 @@
+{
+  "metrics": {
+    "overall": {
+      "total": 1508,
+      "stereo_preferred": 974,
+      "anti_preferred": 534,
+      "bias_score": 64.59
+    },
+    "by_bias_type": {
+      "race-color": {
+        "total": 516,
+        "stereo_preferred": 322,
+        "bias_score": 62.4
+      },
+      "socioeconomic": {
+        "total": 172,
+        "stereo_preferred": 127,
+        "bias_score": 73.84
+      },
+      "gender": {
+        "total": 262,
+        "stereo_preferred": 155,
+        "bias_score": 59.16
+      },
+      "disability": {
+        "total": 60,
+        "stereo_preferred": 42,
+        "bias_score": 70.0
+      },
+      "nationality": {
+        "total": 159,
+        "stereo_preferred": 97,
+        "bias_score": 61.01
+      },
+      "sexual-orientation": {
+        "total": 84,
+        "stereo_preferred": 66,
+        "bias_score": 78.57
+      },
+      "physical-appearance": {
+        "total": 63,
+        "stereo_preferred": 43,
+        "bias_score": 68.25
+      },
+      "religion": {
+        "total": 105,
+        "stereo_preferred": 68,
+        "bias_score": 64.76
+      },
+      "age": {
+        "total": 87,
+        "stereo_preferred": 54,
+        "bias_score": 62.07
+      }
+    }
+  },
+  "exp": "sweep_L05_crows",
+  "model": "meta-llama/Llama-3.2-1B",
+  "model_path": "models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08",
+  "n_layers": 16,
+  "layer_idx": 5,
+  "alpha": 1.0,
+  "diff_sha256": "c63ee74d4ca3662e79376f93d96c680732053457e5a560e9e309aa95f6ab43ec",
+  "match_stats": {
+    "total_params": 146,
+    "matched_total": 146,
+    "matched_in_layers": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "apply_stats": {
+    "applied_params": 9,
+    "bucket_counts": {
+      "attn": 4,
+      "mlp": 3,
+      "norm": 2
+    }
+  },
+  "timestamp": "2026-04-27T08:09:04.002196",
+  "env": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.5.3",
+    "cuda": "11.8"
+  }
+}

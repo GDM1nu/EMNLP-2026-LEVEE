@@ -1,0 +1,403 @@
+{
+  "models": {
+    "qwen_0.5b": {
+      "n_layers": 24,
+      "display": "Qwen2.5 0.5B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "qwen_1.5b": {
+      "n_layers": 28,
+      "display": "Qwen2.5 1.5B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "qwen_3b": {
+      "n_layers": 36,
+      "display": "Qwen2.5 3B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "qwen_14b": {
+      "n_layers": 48,
+      "display": "Qwen2.5 14B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "gemma_2b": {
+      "n_layers": 26,
+      "display": "Gemma2 2B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "gemma_9b": {
+      "n_layers": 42,
+      "display": "Gemma2 9B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "gemma3_12b": {
+      "n_layers": 48,
+      "display": "Gemma3 12B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "llama32_1b": {
+      "n_layers": 16,
+      "display": "LLaMA3.2 1B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "llama32_3b": {
+      "n_layers": 28,
+      "display": "LLaMA3.2 3B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "llama3_8b": {
+      "n_layers": 32,
+      "display": "LLaMA3 8B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    },
+    "llama31_8b": {
+      "n_layers": 32,
+      "display": "LLaMA3.1 8B",
+      "n_sweep_layers": 100,
+      "has_curve": true
+    }
+  },
+  "grid_size": 100,
+  "pairwise": {
+    "qwen_0.5b__vs__qwen_1.5b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "qwen_1.5b",
+      "r": 0.40217212358687365,
+      "p": 3.3582897265194644e-05
+    },
+    "qwen_0.5b__vs__qwen_3b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "qwen_3b",
+      "r": 0.49700699820053146,
+      "p": 1.4420735298063082e-07
+    },
+    "qwen_0.5b__vs__qwen_14b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "qwen_14b",
+      "r": 0.8046109117031958,
+      "p": 6.5194195731018016e-24
+    },
+    "qwen_0.5b__vs__gemma_2b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "gemma_2b",
+      "r": 0.5919714483254211,
+      "p": 8.787585480994874e-11
+    },
+    "qwen_0.5b__vs__gemma_9b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "gemma_9b",
+      "r": 0.6636879997144793,
+      "p": 5.257730765491071e-14
+    },
+    "qwen_0.5b__vs__gemma3_12b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "gemma3_12b",
+      "r": 0.14521002935971927,
+      "p": 0.14944454786264882
+    },
+    "qwen_0.5b__vs__llama32_1b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "llama32_1b",
+      "r": 0.2003723927549465,
+      "p": 0.0456243328904015
+    },
+    "qwen_0.5b__vs__llama32_3b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "llama32_3b",
+      "r": 0.7974286080939866,
+      "p": 3.171997119816337e-23
+    },
+    "qwen_0.5b__vs__llama3_8b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "llama3_8b",
+      "r": 0.3711081849243561,
+      "p": 0.00014405713274815023
+    },
+    "qwen_0.5b__vs__llama31_8b": {
+      "model_a": "qwen_0.5b",
+      "model_b": "llama31_8b",
+      "r": 0.355365575050824,
+      "p": 0.00028545526264502037
+    },
+    "qwen_1.5b__vs__qwen_3b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "qwen_3b",
+      "r": 0.4091581928771269,
+      "p": 2.3713719054027002e-05
+    },
+    "qwen_1.5b__vs__qwen_14b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "qwen_14b",
+      "r": 0.4186841121279486,
+      "p": 1.4569423494097514e-05
+    },
+    "qwen_1.5b__vs__gemma_2b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "gemma_2b",
+      "r": 0.20971968776347136,
+      "p": 0.03624405642936213
+    },
+    "qwen_1.5b__vs__gemma_9b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "gemma_9b",
+      "r": 0.31635163756214973,
+      "p": 0.0013435334134173466
+    },
+    "qwen_1.5b__vs__gemma3_12b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "gemma3_12b",
+      "r": 0.006919812065667333,
+      "p": 0.9455237893444871
+    },
+    "qwen_1.5b__vs__llama32_1b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "llama32_1b",
+      "r": 0.05689816194617543,
+      "p": 0.5739225848262243
+    },
+    "qwen_1.5b__vs__llama32_3b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "llama32_3b",
+      "r": 0.4380616405534385,
+      "p": 5.162062297246423e-06
+    },
+    "qwen_1.5b__vs__llama3_8b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "llama3_8b",
+      "r": 0.26499650037313416,
+      "p": 0.0077111747095798015
+    },
+    "qwen_1.5b__vs__llama31_8b": {
+      "model_a": "qwen_1.5b",
+      "model_b": "llama31_8b",
+      "r": -0.29873498825058215,
+      "p": 0.002535693391714338
+    },
+    "qwen_3b__vs__qwen_14b": {
+      "model_a": "qwen_3b",
+      "model_b": "qwen_14b",
+      "r": 0.8034662927306756,
+      "p": 8.425717493396228e-24
+    },
+    "qwen_3b__vs__gemma_2b": {
+      "model_a": "qwen_3b",
+      "model_b": "gemma_2b",
+      "r": 0.35815025321635624,
+      "p": 0.0002535763502605943
+    },
+    "qwen_3b__vs__gemma_9b": {
+      "model_a": "qwen_3b",
+      "model_b": "gemma_9b",
+      "r": 0.4137901260346247,
+      "p": 1.8747015076949473e-05
+    },
+    "qwen_3b__vs__gemma3_12b": {
+      "model_a": "qwen_3b",
+      "model_b": "gemma3_12b",
+      "r": -0.05146012941167382,
+      "p": 0.611124770120757
+    },
+    "qwen_3b__vs__llama32_1b": {
+      "model_a": "qwen_3b",
+      "model_b": "llama32_1b",
+      "r": 0.565540500846157,
+      "p": 8.750311264310107e-10
+    },
+    "qwen_3b__vs__llama32_3b": {
+      "model_a": "qwen_3b",
+      "model_b": "llama32_3b",
+      "r": 0.30806431648932714,
+      "p": 0.0018201167169648944
+    },
+    "qwen_3b__vs__llama3_8b": {
+      "model_a": "qwen_3b",
+      "model_b": "llama3_8b",
+      "r": 0.6010131642966473,
+      "p": 3.813131214163977e-11
+    },
+    "qwen_3b__vs__llama31_8b": {
+      "model_a": "qwen_3b",
+      "model_b": "llama31_8b",
+      "r": -0.2323529022125918,
+      "p": 0.020005222533016637
+    },
+    "qwen_14b__vs__gemma_2b": {
+      "model_a": "qwen_14b",
+      "model_b": "gemma_2b",
+      "r": 0.6238530413050369,
+      "p": 4.100852324331133e-12
+    },
+    "qwen_14b__vs__gemma_9b": {
+      "model_a": "qwen_14b",
+      "model_b": "gemma_9b",
+      "r": 0.7068431385523457,
+      "p": 2.075096629641323e-16
+    },
+    "qwen_14b__vs__gemma3_12b": {
+      "model_a": "qwen_14b",
+      "model_b": "gemma3_12b",
+      "r": 0.0678084535361079,
+      "p": 0.5026465092014867
+    },
+    "qwen_14b__vs__llama32_1b": {
+      "model_a": "qwen_14b",
+      "model_b": "llama32_1b",
+      "r": 0.3710528981534614,
+      "p": 0.0001444124779820012
+    },
+    "qwen_14b__vs__llama32_3b": {
+      "model_a": "qwen_14b",
+      "model_b": "llama32_3b",
+      "r": 0.6372014652969946,
+      "p": 1.0219190166711408e-12
+    },
+    "qwen_14b__vs__llama3_8b": {
+      "model_a": "qwen_14b",
+      "model_b": "llama3_8b",
+      "r": 0.6033055834103946,
+      "p": 3.072839275362464e-11
+    },
+    "qwen_14b__vs__llama31_8b": {
+      "model_a": "qwen_14b",
+      "model_b": "llama31_8b",
+      "r": -0.0478119252668217,
+      "p": 0.6366567110603736
+    },
+    "gemma_2b__vs__gemma_9b": {
+      "model_a": "gemma_2b",
+      "model_b": "gemma_9b",
+      "r": 0.42230990421511083,
+      "p": 1.2056445824829969e-05
+    },
+    "gemma_2b__vs__gemma3_12b": {
+      "model_a": "gemma_2b",
+      "model_b": "gemma3_12b",
+      "r": 0.013516196177112524,
+      "p": 0.8938226988893394
+    },
+    "gemma_2b__vs__llama32_1b": {
+      "model_a": "gemma_2b",
+      "model_b": "llama32_1b",
+      "r": -0.058187050362635356,
+      "p": 0.5652625564870584
+    },
+    "gemma_2b__vs__llama32_3b": {
+      "model_a": "gemma_2b",
+      "model_b": "llama32_3b",
+      "r": 0.6743874065204902,
+      "p": 1.4539444419525307e-14
+    },
+    "gemma_2b__vs__llama3_8b": {
+      "model_a": "gemma_2b",
+      "model_b": "llama3_8b",
+      "r": 0.25941993585666273,
+      "p": 0.009150860209063288
+    },
+    "gemma_2b__vs__llama31_8b": {
+      "model_a": "gemma_2b",
+      "model_b": "llama31_8b",
+      "r": 0.2093720252122261,
+      "p": 0.03656141976242791
+    },
+    "gemma_9b__vs__gemma3_12b": {
+      "model_a": "gemma_9b",
+      "model_b": "gemma3_12b",
+      "r": 0.09396966207045014,
+      "p": 0.35240103558484537
+    },
+    "gemma_9b__vs__llama32_1b": {
+      "model_a": "gemma_9b",
+      "model_b": "llama32_1b",
+      "r": -0.016115223172552238,
+      "p": 0.8735613580824936
+    },
+    "gemma_9b__vs__llama32_3b": {
+      "model_a": "gemma_9b",
+      "model_b": "llama32_3b",
+      "r": 0.5944001649453977,
+      "p": 7.040098499628352e-11
+    },
+    "gemma_9b__vs__llama3_8b": {
+      "model_a": "gemma_9b",
+      "model_b": "llama3_8b",
+      "r": 0.5444920942302898,
+      "p": 4.745255281369836e-09
+    },
+    "gemma_9b__vs__llama31_8b": {
+      "model_a": "gemma_9b",
+      "model_b": "llama31_8b",
+      "r": 0.06223057039637722,
+      "p": 0.538502968685075
+    },
+    "gemma3_12b__vs__llama32_1b": {
+      "model_a": "gemma3_12b",
+      "model_b": "llama32_1b",
+      "r": 0.06896377755940221,
+      "p": 0.4953782777783088
+    },
+    "gemma3_12b__vs__llama32_3b": {
+      "model_a": "gemma3_12b",
+      "model_b": "llama32_3b",
+      "r": 0.21992260163108973,
+      "p": 0.027908655975590283
+    },
+    "gemma3_12b__vs__llama3_8b": {
+      "model_a": "gemma3_12b",
+      "model_b": "llama3_8b",
+      "r": 0.004522763284243961,
+      "p": 0.9643789299435293
+    },
+    "gemma3_12b__vs__llama31_8b": {
+      "model_a": "gemma3_12b",
+      "model_b": "llama31_8b",
+      "r": 0.188755031842169,
+      "p": 0.0600041709197359
+    },
+    "llama32_1b__vs__llama32_3b": {
+      "model_a": "llama32_1b",
+      "model_b": "llama32_3b",
+      "r": 0.06456043054376195,
+      "p": 0.5233736282920582
+    },
+    "llama32_1b__vs__llama3_8b": {
+      "model_a": "llama32_1b",
+      "model_b": "llama3_8b",
+      "r": 0.10656601519978208,
+      "p": 0.29130160403162564
+    },
+    "llama32_1b__vs__llama31_8b": {
+      "model_a": "llama32_1b",
+      "model_b": "llama31_8b",
+      "r": -0.025436445755468814,
+      "p": 0.8016539921113596
+    },
+    "llama32_3b__vs__llama3_8b": {
+      "model_a": "llama32_3b",
+      "model_b": "llama3_8b",
+      "r": 0.18816364330573324,
+      "p": 0.060825393852021646
+    },
+    "llama32_3b__vs__llama31_8b": {
+      "model_a": "llama32_3b",
+      "model_b": "llama31_8b",
+      "r": 0.40047617667752045,
+      "p": 3.6500429091082374e-05
+    },
+    "llama3_8b__vs__llama31_8b": {
+      "model_a": "llama3_8b",
+      "model_b": "llama31_8b",
+      "r": -0.17641489981993166,
+      "p": 0.07912807467212467
+    }
+  }
+}

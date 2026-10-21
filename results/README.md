@@ -1,7 +1,14 @@
 # Pre-computed Results
 
-This directory contains pre-computed experimental results used to generate
-all figures and tables in the paper.
+This directory contains pre-computed experimental results (JSON only, ~40 MB)
+used to generate the figures and tables in the paper. Model weights, the BBQ
+data, and per-example predictions are not included. Local filesystem prefixes
+were stripped from the `model_path` fields; the remaining
+`models--<org>--<name>/snapshots/<hash>` string identifies the exact HuggingFace
+snapshot that was used.
+
+Generated outputs (`results/paper_validation/`, `results/analysis/plots/`) are
+git-ignored; rerun `python scripts/paper_validation.py` to recreate them.
 
 ## Directory Structure
 
