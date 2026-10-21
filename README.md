@@ -31,6 +31,27 @@ Dashed = base model, dotted = full ΔW, shaded = first / mid / last third.</i></
 |---|---|---|
 | Bias suppression lives in the **mid-third** of ΔW: removing it raises bias in **11 / 11** models | The **first third** carries capability (up to **−35.0 pp** MMLU in Gemma-2-9B); the **mid third** carries bias | In **3 / 11** models, dropping the mid-third leaves the model **more biased than the unaligned base** (up to +46%) |
 
+<details open>
+<summary><b>The "valley" in one picture</b> (schematic, not measured data)</summary>
+
+```text
+L-BBQ (bias score)
+  ^      first third     |     mid third     |     last third
+  |  ----------------\   |                   |   /----------------  <- base model (no injection)
+  |                   \-\|                   |/-/
+  |                      \                   /
+  |                      |\\               //|
+  |                      |  \             /  |
+  |                      |   \\         //   |
+  |                      |     \\     //     |
+  |                      |       \---/       |                      <- the valley: bias suppression
+  +---------------------------------------------------------------> layer index
+```
+
+Injecting ΔW one layer at a time, the bias score dips most when the injected layer lies in the mid-third.
+
+</details>
+
 ---
 
 ## Abstract
