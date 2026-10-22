@@ -3,7 +3,7 @@
 Bias Localization and Functional Separation across 11 LLMs</p>
 
 <p align="center">
-Dongmin Kim (Incheon National University) · Youhyun Shin (Korea University)
+<a href="https://www.linkedin.com/in/kimdongminlinked/">Dongmin Kim</a> (Incheon National University) · Youhyun Shin (Korea University)
 </p>
 
 <p align="center">
